@@ -13,7 +13,7 @@
 .slot-confirmation-btn {
   margin: 4pt 14pt;
 }
-
+/*
 .add-to-home-container {
   display        : flex;
   justify-content: center;
@@ -23,7 +23,7 @@
     color          : #1a8cd2;
   }
 }
-
+*/
 .container {
   max-width: 100%;
   margin   : 0 auto;
@@ -103,7 +103,7 @@
       position : absolute;
       top      : 50%;
       left     : 50%;
-      webkit-transform: translate(-50%, -50%); /* WebKit */
+      -webkit-transform: translate(-50%, -50%); /* WebKit */
       -moz-transform: translate(-50%, -50%); /* Mozilla */
       -o-transform: translate(-50%, -50%); /* Opera */
       -ms-transform: translate(-50%, -50%); /* Internet Explorer */
@@ -156,7 +156,7 @@
     color        : #fff;
     left         : 50%;
     top          : 40%;
-    webkit-transform: translate(-50%, -50%); /* WebKit */
+    -webkit-transform: translate(-50%, -50%); /* WebKit */
     -moz-transform: translate(-50%, -50%); /* Mozilla */
     -o-transform: translate(-50%, -50%); /* Opera */
     -ms-transform: translate(-50%, -50%); /* Internet Explorer */
@@ -205,7 +205,7 @@
     justify-content: center;
     flex-direction: column;
     z-index: 10000000;
-    webkit-transform: translate(-50%, -12%); /* WebKit */
+    -webkit-transform: translate(-50%, -12%); /* WebKit */
     -moz-transform: translate(-50%, -12%); /* Mozilla */
     -o-transform: translate(-50%, -12%); /* Opera */
     -ms-transform: translate(-50%, -12%); /* Internet Explorer */
@@ -243,13 +243,14 @@
     height: 50%;
     top: 50%;
     left: 50%;
-    webkit-transform: translate(-50%, -50%); /* WebKit */
+    -webkit-transform: translate(-50%, -50%); /* WebKit */
     -moz-transform: translate(-50%, -50%); /* Mozilla */
     -o-transform: translate(-50%, -50%); /* Opera */
     -ms-transform: translate(-50%, -50%); /* Internet Explorer */
     transform: translate(-50%, -50%); /* CSS3 */
     z-index: 1;
     color: white;
+    /*
     .sf-filter-option {
       h2 {
         .sf-quote-in {
@@ -260,6 +261,7 @@
         }
       }
     }
+    */
   }
 
   video, iframe {

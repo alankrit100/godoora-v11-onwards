@@ -687,19 +687,19 @@ section.testimonials .container {
 
 .display-3box {
   flex     : 0 0 calc(100% / 3);
-  max-width: calc (100% / 3);
+  max-width: calc((100% / 3));
   min-height: 280px;
 }
 
 .display-4box {
   flex     : 0 0 calc(100% / 4);
-  max-width: calc (100% / 4);
+  max-width: calc(100% / 4);
   min-height: 280px;
 }
 
 .display-5box {
   flex     : 0 0 calc(100% / 5);
-  max-width: calc (100% / 5);
+  max-width: calc(100% / 5);
   min-height: 280px;
 }
 
