@@ -12,6 +12,17 @@ import { Vendors } from 'src/app/app.const';
   styleUrls: ['./landing.page.scss'],
 })
 export class LandingPage implements OnInit {
+    slideOpts = {
+  initialSlide: 0,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+  }
+};
+
+
 
   user: any;
   vendorDeatil: any;
@@ -21,7 +32,7 @@ export class LandingPage implements OnInit {
   totalBranches = [];
   selectedBranch = 'default';
   smallScreen = false;
-  @ViewChild('slideWithLand') slideWithLand: IonSlides;
+  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlides;
 
   @HostListener("window:resize", ['$event'])
   onResize(event) {

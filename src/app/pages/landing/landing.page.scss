@@ -301,3 +301,46 @@
   @extend .action-btn;
   width: 45% !important;
 }
+
+ion-slides.main-banner {
+  position: relative;
+
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+
+    &.left {
+      left: 10px;
+    }
+
+    &.right {
+      right: 10px;
+    }
+  }
+}
+.slider-wrapper {
+  position: relative;
+
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999; // max priority
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    --padding-start: 8px;
+    --padding-end: 8px;
+
+    &.left {
+      left: 10px;
+    }
+
+    &.right {
+      right: 10px;
+    }
+  }
+}

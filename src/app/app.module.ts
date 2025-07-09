@@ -56,7 +56,7 @@ import { SharedModule } from './shared.module';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '520508100358-nc2pkgmhrss0ar89bqdhqtun3ftshcuh.apps.googleusercontent.com'
+              '520508100358-nc2pkgmhrss0ar89bqdhqtun3fztshcuh.apps.googleusercontent.com'
             )
           }
         ]

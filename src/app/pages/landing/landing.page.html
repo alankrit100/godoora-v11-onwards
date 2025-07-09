@@ -7,11 +7,14 @@
         {{ vendorDeatil.landingPage?.heroIntro?.title }}
       </h1>
       <a class="btn" *ngIf="vendorDeatil.landingPage?.heroIntro?.routerLink"
-        [routerLink]="vendorDeatil.landingPage?.heroIntro?.routerLink"><b>{{ vendorDeatil.landingPage?.heroIntro?.linkLabel}}</b></a>
-      <a class="btn" *ngIf="vendorDeatil.landingPage?.heroIntro?.extLink" 
-        [href]="vendorDeatil.landingPage?.heroIntro?.extLink"><b>{{ vendorDeatil.landingPage?.heroIntro?.linkLabel }}</b></a>
+        [routerLink]="vendorDeatil.landingPage?.heroIntro?.routerLink"><b>{{
+          vendorDeatil.landingPage?.heroIntro?.linkLabel}}</b></a>
+      <a class="btn" *ngIf="vendorDeatil.landingPage?.heroIntro?.extLink"
+        [href]="vendorDeatil.landingPage?.heroIntro?.extLink"><b>{{ vendorDeatil.landingPage?.heroIntro?.linkLabel
+          }}</b></a>
     </div>
-    <video playsinline loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" loop="loop" id="myVideo">
+    <video playsinline loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" loop="loop"
+      id="myVideo">
       <source [src]="vendorDeatil.landingPage?.heroIntro?.videoLink" type="video/mp4">
     </video>
     <div class="scroll-arrow-container">
@@ -24,23 +27,42 @@
 
   <section *ngIf="vendorDeatil.landingPage?.slider?.active">
     <div class="m-0 image-container">
-      <carousel class="main-banner">
-        <slide class="item carousel-item" *ngFor="let slide of vendorDeatil.landingPage?.slider.items">
-          <div class="slide position-relative">
-            <img [src]="slide.img">
-            <div class="slide-info">
-              <div class="caption">
-                <h1>{{ slide.heading }}</h1>
-                <h3>{{ slide.subHeading }}</h3>
-                <div class="slide-btn-container mt-4" [ngClass]="{'small-screen': smallScreen}" *ngIf="slide?.btn">
-                  <button *ngIf="slide.btn?.routerLink" (click)="navgigate(slide)">{{ slide?.btn?.label }}</button>
-                  <button *ngIf="slide.btn?.extLink" (click)="navgigate(slide)" >{{ slide?.btn?.label }}</button>
+          <div class="slider-wrapper">
+            <ion-slides #slides [options]="slideOpts" pager="true" class="main-banner">
+              <ion-slide *ngFor="let slide of vendorDeatil.landingPage?.slider.items">
+                <div class="slide position-relative">
+                  <img [src]="slide.img" class="w-100" />
+                  <div class="slide-info">
+                    <div class="caption text-center">
+                      <h1>{{ slide.heading }}</h1>
+                      <h3>{{ slide.subHeading }}</h3>
+
+                      <div class="slide-btn-container mt-4" [ngClass]="{'small-screen': smallScreen}" *ngIf="slide?.btn">
+                        <button *ngIf="slide.btn?.routerLink" (click)="navgigate(slide)">
+                          {{ slide?.btn?.label }}
+                        </button>
+                        <button *ngIf="slide.btn?.extLink" (click)="navgigate(slide)">
+                          {{ slide?.btn?.label }}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </ion-slide>
+            </ion-slides>
+
+            <!-- 👈 Navigation Buttons (outside the slides) -->
+            <ion-button fill="clear" class="nav-btn left" (click)="slides.slidePrev()">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button fill="clear" class="nav-btn right" (click)="slides.slideNext()">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
           </div>
-        </slide>
-      </carousel>
+
+
+
     </div>
   </section>
 
@@ -78,8 +100,9 @@
         </div>
       </div>
     </section>
-  
-    <section class="most_loved_destination mb-2" *ngIf="selectedBranch === 'default' && totalBranches && totalBranches.length > 1 && vendorDeatil?.displayProperty">
+
+    <section class="most_loved_destination mb-2"
+      *ngIf="selectedBranch === 'default' && totalBranches && totalBranches.length > 1 && vendorDeatil?.displayProperty">
       <div class="container">
         <div class="row m-0">
           <div class="col-12 p-0">
@@ -106,7 +129,7 @@
         </div>
       </div>
     </section>
-  
+
     <section class="most_loved_destination" *ngIf="vendorDeatil.landingPage?.destinations?.active">
       <div class="container">
         <div class="row m-0">
@@ -139,15 +162,17 @@
                 <a class="Financials" *ngIf="slide.extLink" target="_blank" [href]="slide.extLink"></a>
               </ng-template>
               <ng-container *ngIf="slide.btn">
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink" [href]="slide.btn.extLink" >{{ slide.btn.label }}</a>
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink" [routerLink]="[slide.btn.routerLink]" >{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink"
+                  [href]="slide.btn.extLink">{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink"
+                  [routerLink]="[slide.btn.routerLink]">{{ slide.btn.label }}</a>
               </ng-container>
             </div>
           </div>
         </div>
       </div>
     </section>
-  
+
     <section class="most_loved_destination" *ngIf="vendorDeatil.landingPage?.experiences?.active">
       <div class="container">
         <div class="row m-0">
@@ -183,8 +208,10 @@
                 <a class="Financials" *ngIf="slide.extLink" target="_blank" [href]="slide.extLink"></a>
               </ng-template>
               <ng-container *ngIf="slide.btn">
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink" [href]="slide.btn.extLink" >{{ slide.btn.label }}</a>
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink" [routerLink]="[slide.btn.routerLink]" >{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink"
+                  [href]="slide.btn.extLink">{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink"
+                  [routerLink]="[slide.btn.routerLink]">{{ slide.btn.label }}</a>
               </ng-container>
               <!-- <a href="" (click)="showDialogMethod()" ></a> -->
             </div>
@@ -192,7 +219,7 @@
         </div>
       </div>
     </section>
-  
+
     <section class="most_loved_destination" *ngIf="vendorDeatil.landingPage?.activities?.active">
       <div class="container">
         <div class="row m-0">
@@ -226,15 +253,17 @@
                 <a class="Financials" *ngIf="slide.extLink" target="_blank" [href]="slide.extLink"></a>
               </ng-template>
               <ng-container *ngIf="slide.btn">
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink" [href]="slide.btn.extLink" >{{ slide.btn.label }}</a>
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink" [routerLink]="[slide.btn.routerLink]" >{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink"
+                  [href]="slide.btn.extLink">{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink"
+                  [routerLink]="[slide.btn.routerLink]">{{ slide.btn.label }}</a>
               </ng-container>
             </div>
           </div>
         </div>
       </div>
     </section>
-  
+
     <section class="most_loved_destination" *ngIf="vendorDeatil.landingPage?.offers?.active">
       <div class="container">
         <div class="row m-0">
@@ -268,15 +297,17 @@
                 <a class="Financials" *ngIf="slide.extLink" target="_blank" [href]="slide.extLink"></a>
               </ng-template>
               <ng-container *ngIf="slide.btn">
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink" [href]="slide.btn.extLink" >{{ slide.btn.label }}</a>
-                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink" [routerLink]="[slide.btn.routerLink]" >{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.extLink"
+                  [href]="slide.btn.extLink">{{ slide.btn.label }}</a>
+                <a class="action-btn" [ngClass]="{'small-action-btn': smallScreen}" *ngIf="slide.btn.routerLink"
+                  [routerLink]="[slide.btn.routerLink]">{{ slide.btn.label }}</a>
               </ng-container>
             </div>
           </div>
         </div>
       </div>
     </section>
-  
+
     <section id="masonry" class="mt-2" [ngClass]="{'small-screen' : smallScreen}"
       *ngIf="vendorDeatil.landingPage?.masonry?.active">
       <div class="container">
@@ -293,7 +324,7 @@
           [rowHeight]="vendorDeatil.landingPage?.masonry.rowHeight"></app-grid-gallery>
       </div>
     </section>
-  
+
     <section *ngIf="vendorDeatil.landingPage?.stories?.active">
       <div class="container">
         <div class="row m-0">
@@ -319,7 +350,7 @@
         </div>
       </div>
     </section>
-  
+
     <section id="html5-lightbox" *ngIf="showDialog && selectedVideoUrl"
       style="top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999998; text-align: center; position: fixed;">
       <div id="html5-lightbox-overlay"
@@ -335,7 +366,8 @@
               style="position: absolute; top: 0px; left: 0px; text-align: center; width: 100%; height: 100%; background: url(&quot;https://www.clubmahindra.com/themes/prospect/assets/js/skins/default/lightbox-loading.gif&quot;) center center no-repeat;">
             </div>
             <div id="html5-error" class="html5-error"
-              style="display:none;position:absolute;padding:8px;text-align:center;width:280px;height:48px;">The requested
+              style="display:none;position:absolute;padding:8px;text-align:center;width:280px;height:48px;">The
+              requested
               content cannot be loaded.<br>Please try again later.</div>
             <div id="html5-image"
               style="position: absolute; top: 0px; left: 0px; padding: 8px; text-align: center; box-sizing: content-box; width: calc(100% - 16px); height: calc(100% - 16px);">
@@ -357,8 +389,8 @@
         </div>
         <div id="html5-watermark" style="position: absolute; left: 10px; top: 10px;"></div>
         <div id="html5-close" (click)="showDialog = false"
-          style="cursor: pointer; position: absolute; top: 0px; right: 0px; margin-top: -16px; margin-right: -16px;"><img
-            src="https://www.clubmahindra.com/themes/prospect/assets/js/skins/default/lightbox-close.png"></div>
+          style="cursor: pointer; position: absolute; top: 0px; right: 0px; margin-top: -16px; margin-right: -16px;">
+          <img src="https://www.clubmahindra.com/themes/prospect/assets/js/skins/default/lightbox-close.png"></div>
       </div>
     </section>
   </aside>

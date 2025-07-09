@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1752010388753,
+  "timestamp": 1752050864305,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -90,7 +90,7 @@
         "/polyfills-dom.5c5f23fb57b03028.js",
         "/polyfills.7356e313b2252aed.js",
         "/runtime.d174f9b82a5246fc.js",
-        "/styles.9900dff5d7b84921.css"
+        "/styles.7902624e6fdce0ff.css"
       ],
       "patterns": []
     },
@@ -4564,14 +4564,14 @@
     "/assets/images/whiteLotusIcon/workshop.png": "612fbf76297841f2ba9b3b2647d9f4a56d41d830",
     "/assets/shapes.svg": "5413e95adabcb2cb639970051f55e0ddb64ace53",
     "/common.754568589342e132.js": "5fde0b98e98d7713f8539f0e458aadf2475c2f4f",
-    "/index.html": "b3d70f3fbf97e8c41b561035f576edade4401983",
+    "/index.html": "7a9efbb12a8d395d95eafabeecd238947b0aa395",
     "/main.33a94572c8bb2b3a.js": "f0edd18052f847178d694e547beaeb35976b8f47",
     "/manifest.webmanifest": "bf9538942a38260c064ece76132314ef5c1284ee",
     "/polyfills-core-js.c8961a92c3ed4c69.js": "e44d42a08762418090a95d81b35288ab338d21e8",
     "/polyfills-dom.5c5f23fb57b03028.js": "06f5dc30f55bf9a3d9c6f9bca07c0041a6bbdaa0",
     "/polyfills.7356e313b2252aed.js": "1d30319de7e654dce1732d4935abf5809a0bd9aa",
     "/runtime.d174f9b82a5246fc.js": "46b9c176d30f26058918497c2e46cb7ac4ed2512",
-    "/styles.9900dff5d7b84921.css": "ed1dc29bb21e9c56d8c04a757275453c66968d7b"
+    "/styles.7902624e6fdce0ff.css": "77d8ab36c2be8092eb35af50bdace3c5d888b0a9"
   },
   "navigationUrls": [
     {
