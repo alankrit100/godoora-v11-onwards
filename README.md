@@ -11,15 +11,14 @@ A web app powered by Node.js and Ionic.
 ## Setup & Run
 
 1. Clone the repo:
-   git clone https://github.com/your-username/your-repo-name.git  
-   cd your-repo-name
+   git clone https://github.com/alankrit100/godoora-v11-onwards.git  
 
 2. Install dependencies:
    npm install
 
 3. Build the project:
-   npm run build  
-   (If Ionic modules throw errors: run `ionic build` first, then `npm run build` again)
+   npm run-script build #  
+   (If Ionic modules throw errors: run `ionic build` first, then `npm run-script build #` again)
 
 4. Start the app:
    npm start
