@@ -4,7 +4,7 @@ import { Location } from '@angular/common';
 import { AppService } from 'src/app/services/app.service';
 import { LoginPage } from 'src/app/pages/login/login.page';
 import { ModalController, MenuController } from '@ionic/angular';
-import { SocialAuthService } from 'angularx-social-login'
+import { SocialAuthService } from '@abacritt/angularx-social-login'
 
 @Component({
   selector: 'app-menu',

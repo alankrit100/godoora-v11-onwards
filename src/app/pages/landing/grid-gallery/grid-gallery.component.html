@@ -1,6 +1,18 @@
-<mat-grid-list [cols]="cols" [rowHeight]="rowHeight" [gutterSize]="gutterSize+'px'">
-    <mat-grid-tile *ngFor="let imageItem of images" [rowspan]="item.rows">
-        <app-grid-gallery-item #item [item]="imageItem" [rowHeight]="rowHeight" [gutterSize]="gutterSize">
-        </app-grid-gallery-item>
-    </mat-grid-tile>
-</mat-grid-list>
+<div 
+  class="custom-grid" 
+  [ngStyle]="{
+    'grid-template-columns': 'repeat(' + cols + ', 1fr)',
+    'gap': gutterSize + 'px'
+  }"
+>
+  <div 
+    class="grid-item" 
+    *ngFor="let imageItem of images"
+  >
+    <app-grid-gallery-item 
+      [item]="imageItem" 
+      [rowHeight]="rowHeight" 
+      [gutterSize]="gutterSize">
+    </app-grid-gallery-item>
+  </div>
+</div>

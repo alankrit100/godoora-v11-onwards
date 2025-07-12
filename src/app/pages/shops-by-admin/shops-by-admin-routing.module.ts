@@ -1,5 +1,5 @@
 import { NgModule, Injectable } from '@angular/core';
-import { Routes, RouterModule, Resolve, ActivatedRouteSnapshot } from '@angular/router';
+import { Routes, RouterModule, ActivatedRouteSnapshot } from '@angular/router';
 
 import { ShopsByAdminPage } from './shops-by-admin.page';
 import { AppService } from 'src/app/services/app.service';
@@ -7,7 +7,7 @@ import { AppService } from 'src/app/services/app.service';
 @Injectable({
   providedIn: 'root'
 })
-export class StoresByAdminResolver implements Resolve<any> {
+export class StoresByAdminResolver  {
   constructor(private appService: AppService) {}
 
   resolve(route: ActivatedRouteSnapshot) {

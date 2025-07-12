@@ -7,6 +7,7 @@ import { LandingPage } from './landing.page';
 import { ComponentsModule } from '../../components/components.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 // import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { RouterModule } from '@angular/router';
 import { MatGridListModule } from '@angular/material';
 import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
 import { GridGalleryItemComponent } from './grid-gallery/grid-gallery-item/grid-gallery-item.component';
@@ -18,11 +19,11 @@ import { SharedModule } from 'src/app/shared.module';
     IonicModule,
     // IvyCarouselModule,
     ComponentsModule,
-    MatGridListModule,
+    LandingPage,
     CarouselModule.forRoot(),
     LandingPageRoutingModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
-  declarations: [LandingPage, GridGalleryComponent, GridGalleryItemComponent]
 })
 export class LandingPageModule { }

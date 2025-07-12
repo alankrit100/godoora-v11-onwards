@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { APP_ID } from '@angular/core';
 import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +14,7 @@ import { ConfirmModalPageModule } from './pages/confirm-modal/confirm-modal.modu
 import { CreateSlotPageModule } from './pages/create-slot/create-slot.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider } from 'angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { HeaderComponent } from './components/header/header.component';
 import { MenuPage } from './components/menu/menu.page';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
@@ -64,7 +65,8 @@ import { SharedModule } from './shared.module';
     },
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    { provide: APP_ID, useValue: 'godoora-app' },
   ],
   bootstrap: [AppComponent],
 })

@@ -2,13 +2,18 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
 import { VendorDeatil } from 'src/app/app.const';
-import { IonSlides } from '@ionic/angular';
+import { IonicModule, IonSlides } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
-
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { TrimunitPipe } from 'src/app/pipes/trimunit.pipe';
+import { DepartmentsPage } from '../departments/departments.page';
 @Component({
+  standalone: true,
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
+  imports: [IonicModule, FormsModule, CommonModule, TrimunitPipe, DepartmentsPage]
 })
 export class HomePage {
 
@@ -24,7 +29,7 @@ export class HomePage {
     slidesPerView: 1,
     autoplay: true
   };
-  @ViewChild('slideWithLand') slideWithLand: IonSlides;
+@ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlides;
 
   constructor(
     private router: Router,

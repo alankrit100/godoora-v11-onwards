@@ -1,11 +1,15 @@
 import { Component, Input, OnInit, ViewChild, ViewChildren } from '@angular/core';
 import { WebCheckInModel } from '../model/web-checkIn.model';
+import { FormsModule } from '@angular/forms';
 // import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
+
 @Component({
+    standalone: true,
     selector: 'web-checkin-form',
     templateUrl: './web-checkin-form.page.html',
-    styleUrls: ['./web-checkin-form.page.scss']
+    styleUrls: ['./web-checkin-form.page.scss'],
+    imports: [FormsModule]
 })
 export class WebCheckinPage implements OnInit {
 

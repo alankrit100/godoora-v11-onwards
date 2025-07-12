@@ -4,11 +4,16 @@ import * as moment from 'moment';
 import { LoadingController, PopoverController } from '@ionic/angular';
 import { OptionPopoverComponent } from 'src/app/components/common/option-popover.component';
 import { Router } from '@angular/router';
-
+import { IonicModule } from '@ionic/angular';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 @Component({
+  standalone: true,
   selector: 'app-guests-list',
   templateUrl: './guests-list.page.html',
   styleUrls: ['./guests-list.page.scss'],
+  imports: [IonicModule, CommonModule, FormsModule]
 })
 export class GuestsListPage implements OnInit {
 

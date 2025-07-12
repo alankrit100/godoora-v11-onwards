@@ -4,8 +4,11 @@ import moment from 'moment';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { LoadingController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
-
+import { IonicModule } from '@ionic/angular';
+import { DatePipe } from '@angular/common';
 @Component({
+  standalone: true,
+  imports: [IonicModule, DatePipe],
   selector: 'app-booked-slots',
   templateUrl: './booked-slots.page.html',
   styleUrls: ['./booked-slots.page.scss'],

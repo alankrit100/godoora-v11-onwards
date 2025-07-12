@@ -4,8 +4,8 @@ import { ModalController, NavParams, LoadingController } from '@ionic/angular';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { Otp } from '../model/shop-keeper.model';
 import { Router } from '@angular/router';
-import { SocialAuthService } from 'angularx-social-login';
-import { GoogleLoginProvider } from 'angularx-social-login';
+import { SocialAuthService } from '@abacritt/angularx-social-login';
+import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { VendorDeatil} from 'src/app/app.const';
 
 @Component({

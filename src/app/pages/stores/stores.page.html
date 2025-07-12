@@ -1,11 +1,22 @@
 <ion-content #scrollMe>
   <div class="container" style="margin-bottom: 200px !important;">
     <div class="Slot-detail" [ngClass]="{'m-3': !smallScreen}" *ngIf="storeDetail && serviceDetail">
-      <carousel *ngIf="serviceDetail.gallery && serviceDetail.gallery.length" #banner [cellsToShow]="smallScreen ? 1 : ((serviceDetail.gallery.length > 5) ? 5 : serviceDetail.gallery.length)" [loop]="false" [arrows]="true" class="branch-carousel" [ngClass]="{'carousel-200': smallScreen}">
-        <div class="carousel-cell" *ngFor="let item of serviceDetail.gallery; let i=index" (click)="openCarouselInModal(i, serviceDetail.gallery)">
-          <img [src]="item.path" style="object-fit: cover;" >
-        </div>
-      </carousel>
+      <owl-carousel-o
+  *ngIf="serviceDetail.gallery && serviceDetail.gallery.length"
+  [options]="galleryCarouselOptions"
+  class="branch-carousel"
+  [ngClass]="{ 'carousel-200': smallScreen }"
+>
+  <ng-container *ngFor="let item of serviceDetail.gallery; let i = index">
+    <ng-template carouselSlide>
+      <div class="carousel-cell" (click)="openCarouselInModal(i, serviceDetail.gallery)">
+        <img [src]="item.path" style="object-fit: cover;" />
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
+
+
       <div class="_g9yb1m">
         <div class="_16e70jgn">
           <div>
@@ -117,16 +128,17 @@
                       <ion-icon name="close" (click)="toggleMenu()"></ion-icon>
                     </span>
                     <div class="w-100 h-100 position-relative" style="z-index: 1;">
-                      <carousel  
-                        style="height: 400px !important;"
-                        class="branch-carousel" 
-                        *ngIf="serviceDetail.menuImgs && serviceDetail.menuImgs.length" #menuslider 
-                        [cellsToShow]="1" 
-                        [arrows]="true" >
-                        <div class="carousel-cell" *ngFor="let item of serviceDetail.menuImgs; let i=index" (click)="openCarouselInModal(i, serviceDetail.menuImgs)">
-                          <img [src]="item.path" style="object-fit: cover;" >
-                        </div>
-                      </carousel>
+<owl-carousel-o 
+  class="branch-carousel"
+  *ngIf="serviceDetail.menuImgs && serviceDetail.menuImgs.length"
+  [options]="menuCarouselOptions">
+
+  <ng-template carouselSlide *ngFor="let item of serviceDetail.menuImgs; let i = index">
+    <div class="carousel-cell" (click)="openCarouselInModal(i, serviceDetail.menuImgs)">
+      <img [src]="item.path" style="object-fit: cover; height: 400px; width: 100%;">
+    </div>
+  </ng-template>
+</owl-carousel-o>
                     </div>
                   </div>
                 </div>
@@ -188,16 +200,15 @@
                       <ion-icon name="close" (click)="toggleMenu()"></ion-icon>
                     </span>
                     <div class="w-100 h-100 position-relative" style="z-index: 1;">
-                      <carousel  
-                        style="height: 400px !important;"
-                        class="branch-carousel" 
-                        *ngIf="serviceDetail.menuImgs && serviceDetail.menuImgs.length" #menuslider 
-                        [cellsToShow]="1" 
-                        [arrows]="true" >
-                        <div class="carousel-cell" *ngFor="let item of serviceDetail.menuImgs; let i=index" (click)="openCarouselInModal(i, serviceDetail.menuImgs)">
-                          <img [src]="item.path" style="object-fit: cover;" >
-                        </div>
-                      </carousel>
+<owl-carousel-o [options]="menuCarouselOptions" *ngIf="serviceDetail.menuImgs?.length">
+  <ng-container *ngFor="let item of serviceDetail.menuImgs; let i = index">
+    <ng-template carouselSlide>
+      <div class="carousel-cell" (click)="openCarouselInModal(i, serviceDetail.menuImgs)">
+        <img [src]="item.path" style="object-fit: cover; width: 100%; height: 400px;" />
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
                     </div>
                   </div>
                 </div>

@@ -5,10 +5,11 @@ import { IonicModule } from '@ionic/angular';
 import { StoresPageRoutingModule } from './stores-routing.module';
 import { StoresPage } from './stores.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+// import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { WebCheckinPage } from './web-checkIn-form.page';
+
 // import { SignaturePadModule } from 'angular2-signaturepad';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselInModalComponent } from 'src/app/components/carousel-in-modal/carousel-in-modal.component';
 import { SharedModule } from 'src/app/shared.module';
 
@@ -18,12 +19,14 @@ import { SharedModule } from 'src/app/shared.module';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    IvyCarouselModule,
+    CarouselModule,
     // CarouselModule.forRoot(),
     // SignaturePadModule,
     SharedModule,
-    StoresPageRoutingModule
+    StoresPage,
+    StoresPageRoutingModule,
+    WebCheckinPage
   ],
-  declarations: [StoresPage, WebCheckinPage, CarouselInModalComponent],
+  declarations: [ CarouselInModalComponent],
 })
 export class StoresPageModule {}

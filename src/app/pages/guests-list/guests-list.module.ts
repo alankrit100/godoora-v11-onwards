@@ -15,10 +15,10 @@ import { ClickOutsideModule } from 'ng-click-outside';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    ClickOutsideModule,
     PopoverModule.forRoot(),
-    GuestsListPageRoutingModule
+    GuestsListPageRoutingModule,
+    GuestsListPage,
+    OptionPopoverComponent
   ],
-  declarations: [GuestsListPage, OptionPopoverComponent],
 })
 export class GuestsListPageModule {}

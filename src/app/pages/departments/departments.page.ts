@@ -1,8 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
-
+import { IonCard } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
 @Component({
+  standalone: true,
+  imports: [IonicModule, CommonModule],
   selector: 'app-departments',
   templateUrl: './departments.page.html',
   styleUrls: ['./departments.page.scss'],

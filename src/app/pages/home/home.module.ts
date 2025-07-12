@@ -16,9 +16,10 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    CarouselModule.forRoot(),
-    HomePageRoutingModule
+    CarouselModule,
+    HomePageRoutingModule,
+    HomePage
   ],
-  declarations: [HomePage]
+  declarations: []
 })
 export class HomePageModule {}

@@ -1,5 +1,5 @@
 import { NgModule, Injectable } from '@angular/core';
-import { Routes, RouterModule, ActivatedRouteSnapshot, Resolve } from '@angular/router';
+import { Routes, RouterModule, ActivatedRouteSnapshot } from '@angular/router';
 import moment from 'moment';
 import { StoresPage } from './stores.page';
 import { AppService } from 'src/app/services/app.service';
@@ -8,7 +8,7 @@ import { AppService } from 'src/app/services/app.service';
 @Injectable({
   providedIn: 'root'
 })
-export class StoreDetailResolver implements Resolve<any> {
+export class StoreDetailResolver  {
   constructor(private appService: AppService) {}
 
   resolve(route: ActivatedRouteSnapshot) {
@@ -24,7 +24,7 @@ export class StoreDetailResolver implements Resolve<any> {
 @Injectable({
   providedIn: 'root'
 })
-export class MultiDateStoreDetailResolver implements Resolve<any> {
+export class MultiDateStoreDetailResolver  {
 
   smallScreen = false;
 

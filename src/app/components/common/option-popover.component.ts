@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+import { IonicModule } from '@ionic/angular';
 @Component({
+    standalone: true,
     selector: 'option-popover',
+    imports: [IonicModule],
     template: `
         <ion-list>
             <ion-item button lines="none">New</ion-item>
