@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/services/app.service';
-import * as moment from 'moment';
+import moment from 'moment';
 import { LoadingController, PopoverController } from '@ionic/angular';
 import { OptionPopoverComponent } from 'src/app/components/common/option-popover.component';
 import { Router } from '@angular/router';

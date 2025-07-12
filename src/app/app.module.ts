@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginPageModule } from './pages/login/login.module';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ConfirmModalPageModule } from './pages/confirm-modal/confirm-modal.module';
 import { CreateSlotPageModule } from './pages/create-slot/create-slot.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -24,50 +24,42 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { CacheInterceptor } from './interceptors/cache.interceptor';
 import { SharedModule } from './shared.module';
 
-@NgModule({
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    IonicModule.forRoot(),
-    AppRoutingModule,
-    LoginPageModule,
-    SocialLoginModule,
-    CreateSlotPageModule,
-    ConfirmModalPageModule,
-    SharedModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-  ],
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    MenuPage,
-    FooterPage,
-    ComingSoonComponent,
-    OffSeasonComponent
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    {
-      provide: 'SocialAuthServiceConfig',
-      useValue: {
-        autoLogin: false,
-        providers: [
-          {
-            id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider(
-              '520508100358-nc2pkgmhrss0ar89bqdhqtun3fztshcuh.apps.googleusercontent.com'
-            )
-          }
-        ]
-      } as SocialAuthServiceConfig,
-    },
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
-    { provide: APP_ID, useValue: 'godoora-app' },
-  ],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        MenuPage,
+        FooterPage,
+        ComingSoonComponent,
+        OffSeasonComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        IonicModule.forRoot(),
+        AppRoutingModule,
+        LoginPageModule,
+        SocialLoginModule,
+        CreateSlotPageModule,
+        ConfirmModalPageModule,
+        SharedModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })], providers: [
+        StatusBar,
+        SplashScreen,
+        {
+            provide: 'SocialAuthServiceConfig',
+            useValue: {
+                autoLogin: false,
+                providers: [
+                    {
+                        id: GoogleLoginProvider.PROVIDER_ID,
+                        provider: new GoogleLoginProvider('520508100358-nc2pkgmhrss0ar89bqdhqtun3fztshcuh.apps.googleusercontent.com')
+                    }
+                ]
+            } as SocialAuthServiceConfig,
+        },
+        { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+        { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true },
+        { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+        { provide: APP_ID, useValue: 'godoora-app' },
+        provideHttpClient(withInterceptorsFromDi()),
+    ] })
 export class AppModule {}
