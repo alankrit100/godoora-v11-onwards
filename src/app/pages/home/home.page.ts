@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
 import { VendorDeatil } from 'src/app/app.const';
-import { IonicModule, IonSlides } from '@ionic/angular';
+import { IonicModule, IonicSlides } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -29,7 +29,7 @@ export class HomePage {
     slidesPerView: 1,
     autoplay: true
   };
-@ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlides;
+@ViewChild('slideWithLand', { static: false }) slideWithLand: typeof IonicSlides = IonicSlides;
 
   constructor(
     private router: Router,

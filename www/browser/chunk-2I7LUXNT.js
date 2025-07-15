@@ -1,1 +1,0 @@
-import{D as i,H as t,eb as s}from"./chunk-W2VBRA3B.js";var E=(()=>{class e{static forRoot(){return{ngModule:e,providers:[]}}static{this.\u0275fac=function(n){return new(n||e)}}static{this.\u0275mod=t({type:e})}static{this.\u0275inj=i({imports:[s]})}}return e})();export{E as a};

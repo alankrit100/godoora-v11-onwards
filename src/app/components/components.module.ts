@@ -10,15 +10,16 @@ import { DepartmentsPage } from '../pages/departments/departments.page';
 import { ServicesPage } from '../pages/services/services.page';
 
 @NgModule({
-    declarations: [ParseNumberPipe, StringToArrayPipe, ServicesPage],
-    exports: [TrimunitPipe, ParseNumberPipe, StringToArrayPipe, DepartmentsPage, ServicesPage],
+    declarations: [ StringToArrayPipe, ServicesPage],
+    exports: [TrimunitPipe,  StringToArrayPipe, DepartmentsPage, ServicesPage],
     imports: [
         CommonModule,
         FormsModule,
         RouterModule,
         IonicModule,
         TrimunitPipe,
-        DepartmentsPage
+        DepartmentsPage,
+        ParseNumberPipe
     ],
     providers: [],
 })

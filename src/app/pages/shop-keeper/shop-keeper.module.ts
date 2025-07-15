@@ -15,8 +15,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    ShopKeeperPageRoutingModule
+    ShopKeeperPageRoutingModule,
+    ShopKeeperPage
   ],
-  declarations: [ShopKeeperPage]
+  declarations: []
 })
 export class ShopKeeperPageModule {}

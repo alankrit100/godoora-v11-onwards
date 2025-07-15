@@ -6,8 +6,16 @@ import { ConfirmModalPage } from '../confirm-modal/confirm-modal.page';
 import { ModalController, LoadingController } from '@ionic/angular';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { VendorDeatil } from 'src/app/app.const';
+import { ParseNumberPipe } from 'src/app/pipes/parse-number.pipe';
+import { IonicModule } from "@ionic/angular";
+import { FormsModule } from '@angular/forms';
+import { TrimunitPipe } from 'src/app/pipes/trimunit.pipe';
+
+
 
 @Component({
+  standalone: true,
+  imports: [TrimunitPipe, IonicModule, ParseNumberPipe, FormsModule],
   selector: 'app-shop-keeper',
   templateUrl: './shop-keeper.page.html',
   styleUrls: ['./shop-keeper.page.scss'],

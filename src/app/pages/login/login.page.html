@@ -1,6 +1,7 @@
 <ion-content>
   <ng-container *ngIf="showLoginContainer">
     <form #loginForm="ngForm">
+      <div class="login-wrapper">
       <div class="login-container">
         <ion-label class="ion-text-wrap login-model-label">
           <button type="button" class="close" aria-label="Close" (click)="close()">
@@ -71,9 +72,12 @@
           </div>
         </ng-container>
       </div>
+      </div>
     </form>
   </ng-container>
   <ng-container *ngIf="showPassContainer">
+    <div class="login-wrapper">
+      <div class="login-container">
     <form #passForm="ngForm" class="otp-form customzied mt-2">
       <ion-label class="ion-text-wrap login-model-label mb-2">
         <button type="button" class="close" aria-label="Close" (click)="close()">
@@ -123,7 +127,10 @@
         </ion-button>
       </div>
     </form>
+    </div>
+  </div>
   </ng-container>
+
   <ng-container *ngIf="showOTPContainer">
     <ion-label class="ion-text-wrap login-model-label">
       <button type="button" class="close" aria-label="Close" (click)="close()">
@@ -133,6 +140,8 @@
     <ion-label class="ion-text-wrap login-model-label">
       Please enter the OTP number sent to +91 {{this.user?.phonenumber}}
     </ion-label>
+    <div class="login-wrapper">
+      <div class="login-container">
     <form #otpForm="ngForm" class="otp-form customzied mt-2">
       <div class="otp-group-control">
         <div class="otp-group">
@@ -168,5 +177,7 @@
         </ion-button>
       </div>
     </form>
+    </div>
+    </div>
   </ng-container>
 </ion-content>

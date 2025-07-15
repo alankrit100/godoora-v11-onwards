@@ -9,7 +9,7 @@
   }
 
   ion-toolbar.theme-modal-title {
-    --background: white;
+    --checkbox-background: white;
     --min-height: 60px;
 
     ion-title.logo-title {
@@ -40,7 +40,7 @@
 
     .header-buttons-default {
       font-size                    : 9pt;
-      --background                 : #ffffff;
+      --checkbox-background                 : #ffffff;
       --border-color               : #1a8cd2;
       --border-width               : 1px;
       --padding-start              : 16px;
@@ -132,6 +132,6 @@
     z-index: -1;
   }
   ion-toolbar.theme-modal-title {
-    --background: transparent !important;
+    --checkbox-background: transparent !important;
   }
 }

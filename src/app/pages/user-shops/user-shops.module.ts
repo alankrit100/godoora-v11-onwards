@@ -15,8 +15,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    UserShopsPageRoutingModule
+    UserShopsPageRoutingModule,
+    UserShopsPage
   ],
-  declarations: [UserShopsPage]
+  declarations: []
 })
 export class UserShopsPageModule {}

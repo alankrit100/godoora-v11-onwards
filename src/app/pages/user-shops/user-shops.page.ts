@@ -5,8 +5,14 @@ import { ShopKeeperDetail } from '../model/shop-keeper.model';
 import { LoadingController } from '@ionic/angular';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { VendorDeatil } from 'src/app/app.const';
+import { IonicModule } from '@ionic/angular';
+import { ParseNumberPipe } from 'src/app/pipes/parse-number.pipe';
+import {RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [IonicModule, ParseNumberPipe, RouterModule, CommonModule],
   selector: 'app-user-shops',
   templateUrl: './user-shops.page.html',
   styleUrls: ['./user-shops.page.scss'],

@@ -1,168 +1,189 @@
-.error-message {
-  color: #f06850;
-  font-size: 9pt;
-  display: block;
-  margin: 8pt 0pt;
+/* ===== Modal Container ===== */
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", sans-serif;
 }
 
+
+/* ===== Close Button ===== */
 .close {
   float: right;
-  font-size: 20px;
-  outline: none;
-  padding: 2px 6px;
-}
-
-.otp-relatives {
-  color: #364469;
-  font-size: 9pt;
-  display: inline-block;
-  margin: 0pt;
-}
-
-ion-input,
-input {
-  font-size: 12pt !important;
-}
-
-.resendOTP {
-  background-color: #364469;
-  color: white;
-  padding: 2pt 4pt;
-  display: inline-block;
-  border-radius: 2pt;
-  margin-top: 0pt;
-  margin-left: 8pt;
+  font-size: 22px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: #999;
   cursor: pointer;
+  margin-top: -10px;
 }
 
+
+
+/* ===== Heading ===== */
 .login-model-label {
-  color: #364469;
-  margin-bottom: 8pt;
-  display: block;
   font-size: 16pt;
-}
-
-.mobileNoMaindiv {
-  display: flex;
-  flex: 1;
-  align-items: baseline;
-}
-
-.mobileNoMaindiv .countryCode-select {
-  padding: 0pt;
-}
-
-.mobileNoMaindiv .item-small-text {
-  flex: 1;
-}
-
-.mobileNoMaindiv .item-small-text small {
-  font-size: 10px;
-  color: rgba(54, 68, 105, 0.68);
+  font-weight: 500;
+  color: #364469;
+  margin: 16px 0 24px 0;
   display: block;
-  margin-top: 2pt;
 }
 
-.mobileNoMaindiv .mobileNumber-item,
-.mobileNoMaindiv .firstName-item {
-  -webkit-box-flex: 1;
-  flex: 1;
-  --min-height: 24pt;
-  font-size: 10pt;
+/* ===== Radio Group Styling ===== */
+ion-radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
+ion-item[lines='none'] {
+  --background: transparent;
+  --inner-padding-end: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  --min-height: 0;
+  --highlight-height: 0;
+  --border-width: 0;
+  align-items: center;
+  background: transparent;
+}
+
+ion-label {
+  font-size: 14px;
+  color: #364469;
+}
+
+/* ===== Input Field ===== */
+.firstName-item {
+  --background: transparent;
+  border-bottom: 1px solid #e0e0e0;
+  --highlight-color-focused: transparent;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+ion-input::part(native) {
+  font-size: 14px;
+  color: #333;
+  padding: 8px 0;
+}
+
+/* ===== Hotel Guest Toggle ===== */
+ion-item.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+ion-toggle {
+  --track-background: #ccc;
+  --track-background-checked: #1a8cd2;
+  --handle-background: #fff;
+  --handle-border-radius: 50%;
+  --handle-width: 20px;
+  --handle-height: 20px;
+  --track-border-radius: 10px;
+  --track-height: 28px;
+  --track-width: 48px;
+}
+
+/* ===== Button Container ===== */
 .login-otp-button-container {
   display: flex;
   justify-content: flex-end;
+  margin-top: 24px;
 }
 
-.login-confirmation-btn,
-.otp-confirmation-btn {
-  margin: 8px 8px 8px 0px;
-  height: 40px;
-  --box-shadow: none;
-  font-weight: 400;
-  color: white;
+/* ===== Login Button ===== */
+.login-confirmation-btn {
   --background: #1a8cd2;
-  --background-activated: #1a8cd2;
-  --background-hover: #1a8cd2;
+  --background-hover: #167bb7;
+  --background-activated: #126a9d;
   --background-focused: #1a8cd2;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  min-width: 90px;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0 16px;
 }
 
-.login-container,
-.otp-container,
-.otp-success-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.login-container .login-form,
-.otp-container .login-form,
-.otp-success-container .login-form {
-  flex: 1;
-  position: relative;
-}
-
-.otp-done {
-  font-size: 32pt;
-  color: green;
-  margin: 16pt;
-}
-
-.bounce-enter-active {
-  animation: bounce-in 0.5s;
-}
-
-.bounce-leave-active {
-  animation: bounce-in 0.5s reverse;
-}
-
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
+/* ===== Divider Styling ===== */
 .or-divider {
-  display: flex;
-  justify-content: center;
-  margin: 16pt 0pt;
-  border-top: 1px solid #80808099;
   position: relative;
+  margin: 24px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
 }
 
 .or-divider div {
-  position: absolute;
-  z-index: 100000;
-  display: block;
-  left: 43%;
-  top: -10px;
   background: white;
-  width: 50px;
-  text-align: center;
-}
-
-// Scoped styles for form
-form ion-label {
-  font-size: 14px;
-}
-
-form ion-button {
+  display: inline-block;
+  padding: 0 10px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 12px;
+  color: #666;
 }
 
-form ion-input {
-  font-size: 14px !important;
+/* ===== Google Icon ===== */
+ion-img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-top: 8px;
 }
-ion-toggle {
-  --handle-background: #92989c;
-  --checked-background: #d0d4d6;
-  --background: rgb(236, 240, 245);
+
+ion-content {
+  --padding-start: 0 !important;
+  --padding-end: 0 !important;
+  --padding-top: 0 !important;
+  --padding-bottom: 0 !important;
+  --background: transparent;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 !important;
+}
+
+::ng-deep ion-content {
+  --background: transparent !important;
+  background: transparent !important;
+}
+
+
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+::ng-deep ion-modal .modal-wrapper {
+  width: auto;
+  max-width: 540px;
+  height: auto;
+  --height: auto;
+  --width: auto;
+  box-shadow: none;
+  background: transparent;
+  --background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }

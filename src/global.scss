@@ -50,7 +50,7 @@ ion-button, button {
 }
 
 .button-default {
-  --background: #1a8cd2;
+  --checkbox-background: #1a8cd2;
 }
 
 .action-sheet-wrapper {
@@ -111,7 +111,7 @@ ion-content {
     top: 50%;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
       0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-    background: white;
+    --checkbox-background: white;
     z-index: 1;
     ul {
       margin: 0px;
@@ -124,9 +124,9 @@ ion-content {
           margin-bottom: 8px;
           width: calc(100%);
           padding: 16px 0px;
-          background: white;
+          --checkbox-background: white;
           &:hover {
-            background: rgb(74, 74, 74);
+            --checkbox-background: rgb(74, 74, 74);
             color: white;
           }
           &:last-child {
@@ -186,4 +186,29 @@ ui-switch {
 
 .grid-item {
   width: 100%;
+}
+
+
+
+/* 🔷 Hide owl-carousel prev/next navigation globally */
+.owl-nav {
+  display: none !important;
+}
+
+.owl-carousel .owl-nav {
+  display: none !important;
+}
+
+.owl-carousel-o .owl-nav {
+  display: none !important;
+}
+
+
+ion-modal::part(backdrop) {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* dimmed black backdrop */
+}
+
+ion-modal::part(content) {
+  background: transparent !important; /* removes outer white box */
+  box-shadow: none !important;
 }

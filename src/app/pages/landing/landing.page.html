@@ -112,7 +112,7 @@
             <p class="margn-t-b"></p>
           </div>
         </div>
-        <div class="row m-0" style="overflow: scroll;flex-wrap: nowrap;">
+        <div class="row m-0" style="overflow: auto;flex-wrap: nowrap;">
           <ng-container *ngFor="let item of totalBranches">
             <div class="wrap_destination branches px-1 display-5box" *ngIf="item.branch != 'default'"
               (click)="navigateToBranchPage(item)">
@@ -140,7 +140,7 @@
             <p class="margn-t-b">{{ vendorDeatil.landingPage?.destinations.desc }}</p>
           </div>
         </div>
-        <div class="row m-0" style="overflow: scroll;flex-wrap: nowrap;"
+        <div class="row m-0" style="overflow: auto;flex-wrap: nowrap;"
           *ngIf="vendorDeatil.landingPage?.destinations.items && vendorDeatil.landingPage?.destinations.items.length">
           <div class="wrap_destination px-1 display-3box"
             [ngClass]="{'display-3box-n-half': (vendorDeatil.landingPage?.destinations?.items?.length > 3), 'small-wrap_destination': smallScreen}"
@@ -185,7 +185,7 @@
             <p class="margn-t-b">{{ vendorDeatil.landingPage?.experiences?.desc }}</p>
           </div>
         </div>
-        <div class="row m-0" style="overflow: scroll;flex-wrap: nowrap;"
+        <div class="row m-0" style="overflow: auto;flex-wrap: nowrap;"
           *ngIf="vendorDeatil.landingPage?.experiences?.items && vendorDeatil.landingPage?.experiences?.items.length">
           <div class="wrap_destination px-1 display-3box"
             [ngClass]="{'display-3box-n-half': (vendorDeatil.landingPage?.experiences?.items?.length > 3), 'small-wrap_destination': smallScreen}"
@@ -232,7 +232,7 @@
             <p class="margn-t-b">{{ vendorDeatil.landingPage?.activities?.desc }}</p>
           </div>
         </div>
-        <div class="row m-0 p-0" style="overflow: scroll;flex-wrap: nowrap;"
+        <div class="row m-0 p-0" style="overflow: auto;flex-wrap: nowrap;"
           *ngIf="vendorDeatil.landingPage?.activities?.items && vendorDeatil.landingPage?.activities?.items.length">
           <div class="wrap_destination px-1 display-3box"
             [ngClass]="{'display-3box-n-half': (vendorDeatil.landingPage?.activities?.items?.length > 3), 'small-wrap_destination': smallScreen}"
@@ -276,7 +276,7 @@
             <p class="margn-t-b">{{ vendorDeatil.landingPage?.offers?.desc }}</p>
           </div>
         </div>
-        <div class="row m-0" style="overflow: scroll;flex-wrap: nowrap;"
+        <div class="row m-0" style="overflow: auto;flex-wrap: nowrap;"
           *ngIf="vendorDeatil.landingPage?.offers?.items && vendorDeatil.landingPage?.offers?.items.length">
           <div class="wrap_destination px-1 display-3box"
             [ngClass]="{'display-3box-n-half': (vendorDeatil.landingPage?.offers?.items?.length > 3), 'small-wrap_destination': smallScreen}"
