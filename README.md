@@ -1,7 +1,7 @@
-🧾 Overview
+###### Overview
 This repository contains the updated codebase for Godoora v11 onwards, featuring recent changes, bug fixes, and upgraded dependencies. This release focuses on compatibility, security, and improved modularity.
 
-✅ Prerequisites
+## Prerequisites
 Before running the app, ensure the following are installed:
 
 Node.js v18.x or higher
@@ -9,75 +9,51 @@ Node.js v18.x or higher
 npm v9.x or higher
 
 Angular CLI v18+
-Install via:
 
-bash
-Copy
-Edit
+ ### Install via:
 npm install -g @angular/cli
-⚙️ Installation
+
+### Installation
 Clone the repo and install dependencies:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-org/godoora-v11-onwards.git
+## step 1: git clone https://github.com/your-org/godoora-v11-onwards.git
 cd godoora-v11-onwards
-npm install --legacy-peer-deps
-🚀 Running the App Locally
-Start the development server:
+## step 2: go to vs code and open the terminal.
 
-bash
-Copy
-Edit
+## step 3: Run the following command in the terminal: npm install 
+if the command throws error, try npm install --legacy-peer-deps or --force(last resort).
+
+
+### Running the App Locally
+## Start the development server:
 ng serve
-Then open your browser at:
+# OR 
+npm run build and then npm start 
 
-arduino
-Copy
-Edit
+## Then open your browser at:
 http://localhost:4200/
-Use --configuration=production for production build:
 
-bash
-Copy
-Edit
-ng build --configuration=production
-📁 Folder Structure
-css
-Copy
-Edit
-src/
-  ├── app/
-  ├── assets/
-  ├── environments/
-  └── index.html
-Most app logic lives inside src/app/.
 
-🐞 Known Issues
-Issue ID	Description	Status
-#42	Social login library conflict with Angular 18	⚠ Workaround: use --legacy-peer-deps
-#56	Owl Carousel not styling correctly in mobile view	🛠 Pending fix
-#71	Lazy loading not optimized for media-heavy routes	✅ Fixed
 
-🔄 Recent Changes
-✅ Upgraded to Angular v18
+### Known Issues
+1. Social login library conflict with Angular 18	
+Workaround: use --legacy-peer-deps
+2. Windows firewall was blocking the execution of scripts from VS code.  FIX: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
+3. node-gyp ERR! find VS You need to install the latest version of Visual Studio including the "Desktop development with C++" workload. - > FIX: install the necessary SDK components and the c++ components in the visual studio application.
 
-✅ Integrated @abacritt/angularx-social-login
 
-✅ Replaced deprecated entryComponents
+### Recent Changes
+✅ Upgraded to Angular v18 by adhering to all the standard and modern coding practices that are relevant to the industry standards.
 
-✅ Refactored routing module
+✅ Integrated @abacritt/angularx-social-login as the earlier login module that was being used was deprecated. 
 
-✅ Bug fixes for carousel rendering, modals, and routing
+✅ Replaced deprecated entryComponents.. and replaced them with standalone components.
 
-🤝 Contributors
-Alankrit — Dev Lead
+✅ Refactored routing module to work with angular v18 seamlessly.
 
-Prasad N — Code Reviewer & QA
+✅ Bug fixes for carousel rendering, modals, and routing modules.
 
-And the rest of the awesome team 🛠️
+✅ Upgraded to ionic version 6 successfully to be compatible to work with angular v18.
 
-📬 Need Help?
-Feel free to open an issue or ping on the internal Slack channel #godoora-dev.
+✅ changed the css styling of login-modal to match the previous styling of the prod application(angular version 8).
+
 
