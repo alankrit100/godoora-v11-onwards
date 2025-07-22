@@ -57,3 +57,17 @@ Workaround: use --legacy-peer-deps
 ✅ changed the css styling of login-modal to match the previous styling of the prod application(angular version 8).
 
 
+
+### Changes in the package.json file:
+NOTE: The package.json file is being referred as this would cover all the major library changes/ommission, and all the version changes that have been made to the codebase.
+
+ - Upgraded Angular from 8 → 18
+ - Replaced deprecated angularx-social-login with @abacritt/angularx-social-login
+ - Ionic from v5 → v6.7.5
+ - Capacitor CLI upgraded from v1.5.1 → v6.2.1
+ - Major dev tooling upgrade: TypeScript, Karma, Jasmine to versions 5.5.4, and v6+ ranges respectively.
+ - Replaced deprecated angularx-social-login with @abacritt/angularx-social-login
+ - Removed ngx-ui-switch
+ - cordova-res still exists with a vulnerable sharp dependency
+   
+
