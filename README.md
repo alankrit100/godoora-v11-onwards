@@ -69,5 +69,14 @@ NOTE: The package.json file is being referred as this would cover all the major 
  - Replaced deprecated angularx-social-login with @abacritt/angularx-social-login
  - Removed ngx-ui-switch
  - cordova-res still exists with a vulnerable sharp dependency
-   
+
+
+### Files Modified:
+ - all the component files(with the .ts extension) have been converted to standalone files.
+ - menu.page.html and menu.page.scss have been rewritten to match the previous login-modal component.
+ - global.scss for some more enhanced styling
+ - stores.page.html and .css files have been ommiteed respectfully for the addition of the owl-carousel component.
+ - 
+
+   Apart from these, all the standard Angular and Ionic migration procedure had been followed on an incremental approach so it would be difficult to keep track of each one of them. However, The application has been upgraded with utmost caution and special attention has been given to all the breaking and deprecating changes in the codebase; hence leading to successfull upgradation and working of the production website.
 
