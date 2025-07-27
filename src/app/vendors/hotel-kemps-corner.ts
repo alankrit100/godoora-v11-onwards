@@ -1,5 +1,5 @@
 export const kemps_corner = {
-        'www.hotel-kemps-corner.goyaana.com': [
+        'localhost:4200': [
         {
             branch: 'Hotel Kemps Corner',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Hotel-Kemps-Corner/Hotel-Kemps-Landing-Page.jpg',

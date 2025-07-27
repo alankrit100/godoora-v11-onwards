@@ -356,3 +356,141 @@ ion-slides.main-banner {
   background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
   pointer-events: none;
 }
+
+ion-slides.main-banner,
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; // Maintain aspect ratio
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 500px; // Or a defined value like 500px if 100vh is too much
+  max-height: 400px;
+  overflow: hidden;
+}
+.slider-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex; /* removes tiny white space caused by inline-block rendering */
+}
+
+.owl-carousel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 !important;
+
+  .owl-stage-outer {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .owl-stage {
+    display: flex;
+    align-items: stretch; // ensures items stretch to full height
+  }
+
+  .owl-item {
+    display: flex;
+    align-items: stretch; // again for full height
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .item {
+    height: 200px; // or whatever height you're targeting
+    overflow: hidden;
+  }
+}
+
+
+.menu-slider {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+
+  .branch-carousel {
+    width: 100%;
+    height: 100%;
+    .owl-stage-outer {
+      height: 100%;
+    }
+
+    .carousel-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      max-height: 90vh;
+
+      img {
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  button.owl-prev,
+  button.owl-next {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff !important;
+    border: none;
+    font-size: 24px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  button.owl-prev:hover,
+  button.owl-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+ion-icon {
+  font-size: 24px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dot-bar {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  z-index: 5;
+}

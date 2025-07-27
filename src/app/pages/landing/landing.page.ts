@@ -11,9 +11,11 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 @Component({
   standalone: true,
-  imports: [IonicModule,GridGalleryComponent, RouterModule, CommonModule, SafePipe],
+  imports: [IonicModule,GridGalleryComponent, RouterModule, CommonModule, SafePipe, CarouselModule],
   selector: 'app-landing',
   templateUrl: './landing.page.html',
   styleUrls: ['./landing.page.scss'],
@@ -23,6 +25,7 @@ export class LandingPage implements OnInit {
   initialSlide: 0,
   loop: true,
   speed: 600,
+  autoheight: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: true
@@ -40,6 +43,7 @@ export class LandingPage implements OnInit {
   selectedBranch = 'default';
   smallScreen = false;
   @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlide;
+carouselOptions: any;
 
   @HostListener("window:resize", ['$event'])
   onResize(event) {
