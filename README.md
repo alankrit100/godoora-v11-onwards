@@ -77,6 +77,7 @@ NOTE: The package.json file is being referred as this would cover all the major 
  - global.scss for some more enhanced styling
  - stores.page.html and .css files have been ommiteed respectfully for the addition of the owl-carousel component.
  - **Important Update in app.const.ts file**
+ - 
 all the arrays in the previous app.const.ts file have been deleted; and moved to seperate files under the Vendors folder.
 Each file has been imported under a new class called vendors in the app.const.ts file. 
 if any change is needed to be made in any of the hotel url domain info, the user can now directly go to the respective file and make changes there itself.
