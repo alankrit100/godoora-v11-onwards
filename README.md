@@ -76,11 +76,19 @@ NOTE: The package.json file is being referred as this would cover all the major 
  - menu.page.html and menu.page.scss have been rewritten to match the previous login-modal component.
  - global.scss for some more enhanced styling
  - stores.page.html and .css files have been ommiteed respectfully for the addition of the owl-carousel component.
- - ** Important Update in app.const.ts file **
-all the arrays in the previous app.const.ts file have been deleted; and moved to seperate files under the Vendors folder.
-Each file has been imported under a new class called vendors in the app.const.ts file. 
-if any change is needed to be made in any of the hotel url domain info, the user can now directly go to the respective file and make changes there itself.
-This makes the code look less bulky and gives free move to the editors who are working on the project, thus helping create an hasstlefree environment.
+### 🔄 Important Update in `app.const.ts` File
+
+All the arrays that were previously defined in the `app.const.ts` file have now been **deleted** and moved to **separate files** under the `Vendors/` folder.
+
+Each of these files has been imported under a new class called `Vendors` in the `app.const.ts` file.
+
+---
+
+#### 💡 What This Means
+
+- If any changes need to be made to hotel URL/domain information, you can now **directly edit the respective file** under the `Vendors/` folder.
+- This approach makes the codebase **cleaner and less bulky**.
+- Editors and collaborators now have **more freedom** to make updates independently, without causing merge conflicts or clutter — resulting in a **hassle-free development environment**.
 
    Apart from these, all the standard Angular and Ionic migration procedure had been followed on an incremental approach so it would be difficult to keep track of each one of them. However, The application has been upgraded with utmost caution and special attention has been given to all the breaking and deprecating changes in the codebase; hence leading to successfull upgradation and working of the production website.
 
