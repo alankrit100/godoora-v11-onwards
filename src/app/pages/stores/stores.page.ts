@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, viewChild, ViewChild } from '@angular/core';
 import moment from 'moment';
 import { ModalController, NavController, LoadingController } from '@ionic/angular';
 import { ConfirmModalPage } from '../confirm-modal/confirm-modal.page';
@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { WebCheckinPage } from './web-checkIn-form.page';
 import { FormsModule } from '@angular/forms';
+import { IonSlides } from '@ionic/angular';
 
 
 @Component({
@@ -35,38 +36,7 @@ export class StoresPage implements OnInit {
   adminCreated: boolean;
   vendorDeatil: VendorDeatil;
   serviceDetail: any = { gallery: [], menuImgs: [] };
-  menuCarouselOptions: any;
-  galleryCarouselOptions: any;
-  ngOnInit(): void {
-    this.menuCarouselOptions = {
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: false,
-      items: 1,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-      }
-    };
-
-        this.galleryCarouselOptions = {
-      loop: false,
-      nav: true,
-      dots: false,
-      margin: 10,
-      responsive: {
-        0: { items: 1 },
-        768: {
-          items: this.serviceDetail.gallery?.length > 5 ? 5 : this.serviceDetail.gallery?.length
-        }
-      }
-    };
-  }
+  ngOnInit(): void {}
 
   comments: string;
   showMenu = false;
@@ -74,6 +44,22 @@ export class StoresPage implements OnInit {
   submit = false;
   invalidFlags: any;
   smallScreen = false;
+
+  slideOpts = {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+    autoHeight: true,
+    pagination: false,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    }
+  };
+
+
+
   gallery = [
     {path: 'https://source.unsplash.com/433x649/?Uruguay'},
     {path: 'https://source.unsplash.com/530x572/?Jamaica'},
@@ -93,6 +79,26 @@ export class StoresPage implements OnInit {
     {path: 'https://source.unsplash.com/518x813/?Romania'}
   ];
   @ViewChild('scrollMe', {static: false}) private content: any;
+  
+  @ViewChild('menuSlides', {static: false}) menuSlides!: IonSlides;
+  @ViewChild('gallerySlides', { static: false }) gallerySlides!: IonSlides;
+
+
+  prevSlide() {
+    this.gallerySlides?.slidePrev();
+  }
+  nextSlide() {
+    this.gallerySlides?.slideNext();
+  }
+
+  prevMenuSlide() {
+    this.menuSlides?.slidePrev();
+  }
+
+  nextMenuSlide() {
+    this.menuSlides?.slideNext();
+  }
+
   onResize(event) {
     this.smallScreen = this.appService.checkSmallScreen();
   }
