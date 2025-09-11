@@ -1,49 +1,35 @@
-import {
-  Component,
-  HostListener,
-  OnInit,
-  ViewChild,
-  ElementRef,
-  AfterViewInit,
-  OnDestroy,
-} from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LoginPage } from '../login/login.page';
-import { ModalController, IonicModule } from '@ionic/angular';
+import { ModalController, IonSlide } from '@ionic/angular';
 import { AppService } from 'src/app/services/app.service';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Vendors } from 'src/app/app.const';
+import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
-
-import EmblaCarousel, {
-  EmblaOptionsType,
-  EmblaCarouselType,
-} from 'embla-carousel';
-import Autoplay from 'embla-carousel-autoplay';
-
 @Component({
   standalone: true,
-  imports: [
-    IonicModule,
-    GridGalleryComponent,
-    RouterModule,
-    CommonModule,
-    SafePipe,
-  ],
+  imports: [IonicModule,GridGalleryComponent, RouterModule, CommonModule, SafePipe],
   selector: 'app-landing',
   templateUrl: './landing.page.html',
   styleUrls: ['./landing.page.scss'],
 })
-export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
-  @ViewChild('embla', { static: false }) emblaRef!: ElementRef<HTMLElement>;
-  private embla: EmblaCarouselType | null = null;
-  private autoplayPlugin: any = null;
+export class LandingPage implements OnInit {
+    slideOpts = {
+  initialSlide: 0,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+  }
+};
 
-  slideOpts: EmblaOptionsType = { loop: true, duration: 20, align: 'start' };
+
 
   user: any;
   vendorDeatil: any;
@@ -53,9 +39,10 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
   totalBranches = [];
   selectedBranch = 'default';
   smallScreen = false;
+  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlide;
 
-  @HostListener('window:resize', ['$event'])
-  onResize() {
+  @HostListener("window:resize", ['$event'])
+  onResize(event) {
     this.smallScreen = this.appService.checkSmallScreen();
   }
 
@@ -65,7 +52,7 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
     private modalCtrl: ModalController,
     private utilAlertService: UtilAlertService,
     private route: ActivatedRoute,
-    public sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer,
   ) {
     this.totalBranches = Vendors[window.location.host];
     this.route.params.subscribe((params) => {
@@ -82,65 +69,17 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
     this.smallScreen = this.appService.checkSmallScreen();
   }
 
-  ngOnInit() {}
-
-  ngAfterViewInit() {
-    setTimeout(() => this.initEmbla(), 50);
-  }
-
-  private initEmbla() {
-    if (!this.emblaRef || !this.emblaRef.nativeElement) return;
-
-    const slides =
-      this.emblaRef.nativeElement.querySelectorAll('.embla__slide');
-    if (!slides || slides.length === 0) return;
-
-    this.destroyEmbla();
-
-    const options: EmblaOptionsType = {
-      loop: true,
-      align: 'start',
-      skipSnaps: false,
-      duration: 0,
-    };
-
-    this.autoplayPlugin = Autoplay({
-      delay: 3000,
-      stopOnInteraction: true,
-      stopOnMouseEnter: true,
+  setVendor(branch) {
+    this.vendorDeatil = this.totalBranches.find((item) => {
+      return item.branch === branch;
     });
-
-    this.embla = EmblaCarousel(this.emblaRef.nativeElement, options, [
-      this.autoplayPlugin,
-    ]);
-  }
-
-  private destroyEmbla() {
-    if (this.embla) {
-      this.embla.destroy();
-      this.embla = null;
-    }
-    this.autoplayPlugin = null;
-  }
-
-  scrollPrev() {
-    if (!this.embla) this.initEmbla();
-    this.embla?.scrollPrev();
-  }
-
-  scrollNext() {
-    if (!this.embla) this.initEmbla();
-    this.embla?.scrollNext();
-  }
-
-  setVendor(branch: string) {
-    this.vendorDeatil = this.totalBranches.find(
-      (item) => item.branch === branch
-    );
     if (!this.vendorDeatil) {
       this.vendorDeatil = this.totalBranches[this.totalBranches.length - 1];
     }
     this.appService.setVendorDetail(this.vendorDeatil);
+  }
+
+  ngOnInit() {
   }
 
   ionViewWillEnter() {
@@ -149,7 +88,7 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
       e.preventDefault();
       this.appService.setPwaPromtObj(e);
     });
-    window.addEventListener('appinstalled', () => {
+    window.addEventListener('appinstalled', (event) => {
       this.utilAlertService.showSuccess('Added to homescreen');
     });
   }
@@ -162,15 +101,17 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
+  // Method called when slide is changed by drag or navigation
+  SlideDidChange(slideView) {
+    // this.checkIfNavDisabled(object, slideView);
+  }
+
   listMyBusiness() {
     if (!this.user) {
       this.openLogin();
     } else {
-      if (
-        this.user.firstTime === false &&
-        this.user.availableDays &&
-        this.user.availableDays.length
-      ) {
+      if (this.user.firstTime === false &&
+        (this.user.availableDays && this.user.availableDays.length)) {
         this.router.navigate(['/booked-customers']);
       } else {
         this.router.navigate(['/shop-keeper']);
@@ -181,28 +122,41 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
   bookSlot() {
     this.router.navigate(['/by-admin/', 158]);
   }
+
   myServices() {
-    this.user
-      ? this.router.navigate(['/user-shops'])
-      : this.openLogin(true);
+    if (this.user) {
+      this.router.navigate(['/user-shops']);
+    } else {
+      this.openLogin(true);
+    }
   }
+
   allAppointments() {
-    this.user
-      ? this.router.navigate(['/booked-customers'])
-      : this.openLogin(true);
+    if (this.user) {
+      this.router.navigate(['/booked-customers']);
+    } else {
+      this.openLogin(true);
+    }
   }
+
   editShop() {
-    this.user
-      ? this.router.navigate(['/shop-keeper'])
-      : this.openLogin(true);
+    if (this.user) {
+      this.router.navigate(['/shop-keeper']);
+    } else {
+      this.openLogin(true);
+    }
   }
 
   bookMyAppontments() {
     if (this.user) {
-      if (this.user.type === 'A' || this.user.type === 'S') {
+      if (this.user.type === 'A') {
         this.router.navigate(['/booked-customers']);
       } else {
-        this.router.navigate(['/booked-slots']);
+        if (this.user.type === 'S') {
+          this.router.navigate(['/booked-customers']);
+        } else {
+          this.router.navigate(['/booked-slots']);
+        }
       }
     } else {
       this.openLogin(true);
@@ -219,19 +173,20 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
       animated: true,
       showBackdrop: true,
       component: LoginPage,
-      componentProps: { enableRadio: enableRadio ? true : false },
+      componentProps: {
+        enableRadio: enableRadio ? true : false
+      }
     });
     modal.onDidDismiss().then((dataReturned) => {
       setTimeout(() => {
         if (this.user && dataReturned.data) {
-          if (
-            this.user.firstTime === false &&
-            this.user.availableDays &&
-            this.user.availableDays.length
-          ) {
+          if (this.user.firstTime === false &&
+            (this.user.availableDays && this.user.availableDays.length)) {
             this.router.navigate(['/booked-customers']);
           } else {
-            if (this.user.type === 'A' || this.user.type === 'S') {
+            if (this.user.type === 'A') {
+              this.router.navigate(['/booked-customers']);
+            } else if (this.user.type === 'S') {
               this.router.navigate(['/booked-customers']);
             } else {
               this.router.navigate(['/booked-slots']);
@@ -252,20 +207,20 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
   }
 
   getUserDetail() {
-    this.appService.userDetail.subscribe((res) => (this.user = res));
+    this.appService.userDetail.subscribe((res) => {
+      this.user = res;
+    });
   }
+
   getVendorDetail() {
     this.appService.vendorDeatil.subscribe((res) => {
       this.vendorDeatil = res;
-      setTimeout(() => this.initEmbla(), 50); // re-init after vendor data loads
     });
   }
 
   showDialogMethod(slide) {
     if (slide && slide.videoId) {
-      this.selectedVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        'https://www.youtube.com/embed/' + slide.videoId
-      );
+      this.selectedVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + slide.videoId)
       this.showDialog = true;
     }
     return false;
@@ -273,26 +228,22 @@ export class LandingPage implements OnInit, AfterViewInit, OnDestroy {
 
   scrollToMasonry() {
     if (this.vendorDeatil.landingPage.experience.active) {
-      const goyannaExp = document.getElementsByClassName('goyanna_exp');
+      const goyannaExp = document.getElementsByClassName("goyanna_exp");
       if (goyannaExp.length > 0) {
-        goyannaExp.item(0).scrollIntoView({ behavior: 'smooth' });
+        goyannaExp.item(0).scrollIntoView({ behavior: "smooth" }); 
       }
     }
   }
 
+
   navgigate(slide: any) {
-    if (slide?.btn) {
-      if (slide.btn.routerLink) {
+    if(slide.btn) {
+      if(slide.btn.routerLink) {
         this.router.navigate([slide.btn.routerLink]);
-      } else if (slide.btn.extLink) {
+      } else if(slide.btn.extLink) {
         window.open(slide.btn.extLink);
       }
     }
   }
 
-  ngOnDestroy() {
-    this.destroyEmbla();
-  }
 }
-
-
