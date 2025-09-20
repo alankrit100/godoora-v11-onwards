@@ -25,6 +25,53 @@
     </div>
   </section>
 
+  <!-- Hero/Slider Section -->
+  <section *ngIf="vendorDeatil?.sliders && vendorDeatil?.sliders.length">
+    <div class="m-0 image-container">
+      <div class="slider-wrapper">
+        <div class="main-banner">
+          <ion-slides #slideWithLand [options]="slideOpts" pager="true" class="main-banner">
+            <ion-slide *ngFor="let slide of vendorDeatil?.sliders; let i = index">
+              <div class="slide-container position-relative">
+                <img [src]="slide.image" [alt]="slide.heading" class="w-100" />
+                <div class="slide-info">
+                  <div class="caption text-center">
+                    <h1>{{ slide.heading }}</h1>
+                    <h3>{{ slide.subHeading }}</h3>
+
+                    <!-- CTA buttons -->
+                    <div class="slide-btn-container mt-4" [ngClass]="{'small-screen': smallScreen}" *ngIf="slide?.cta && slide?.cta.length">
+                      <ng-container *ngFor="let button of slide.cta">
+                        <button *ngIf="button?.linkType === 'external'; else internal"
+                               (click)="navigateExternal(button?.link)">
+                          {{ button?.text }}
+                        </button>
+                        <ng-template #internal>
+                          <button [routerLink]="button?.link">
+                            {{ button?.text }}
+                          </button>
+                        </ng-template>
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ion-slide>
+          </ion-slides>
+
+          <!-- Navigation Buttons -->
+          <ion-button class="nav-btn prev left" fill="clear" (click)="slidePrev()">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </ion-button>
+          <ion-button class="nav-btn next right" fill="clear" (click)="slideNext()">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Original slider section (fallback for existing data structure) -->
   <section *ngIf="vendorDeatil.landingPage?.slider?.active">
     <div class="m-0 image-container">
           <div class="slider-wrapper">
@@ -51,7 +98,7 @@
               </ion-slide>
             </ion-slides>
 
-            <!-- 👈 Navigation Buttons (outside the slides) -->
+            <!-- Navigation Buttons (outside the slides) -->
             <ion-button fill="clear" class="nav-btn left" (click)="slides.slidePrev()">
               <ion-icon name="chevron-back-outline"></ion-icon>
             </ion-button>
@@ -60,9 +107,6 @@
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </ion-button>
           </div>
-
-
-
     </div>
   </section>
 
