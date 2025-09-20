@@ -1,4 +1,15 @@
-<div class="image-viewer">
-    <span (click)="dismiss()" >X</span>
-    <img [src]="imgPath">
+<div class="carousel-container">
+  <span class="close-button" (click)="dismiss()"> X </span>
+
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let image of images">
+      <div class="slide-content">
+        <img [src]="image.src" [alt]="image.alt" />
+        
+        <div class="caption" *ngIf="image.caption">
+          <p>{{ image.caption }}</p>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
 </div>
