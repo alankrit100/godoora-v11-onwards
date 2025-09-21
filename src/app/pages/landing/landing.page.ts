@@ -1,38 +1,27 @@
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LoginPage } from '../login/login.page';
-import { ModalController, IonSlide } from '@ionic/angular';
+import { ModalController, IonSlides } from '@ionic/angular';
 import { AppService } from 'src/app/services/app.service';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Vendors } from 'src/app/app.const';
 import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
+
 
 @Component({
   standalone: true,
-  imports: [IonicModule,GridGalleryComponent, RouterModule, CommonModule, SafePipe, CarouselModule],
+  imports: [IonicModule, RouterModule, CommonModule, SafePipe, GridGalleryComponent, CarouselModule],
   selector: 'app-landing',
   templateUrl: './landing.page.html',
   styleUrls: ['./landing.page.scss'],
 })
 export class LandingPage implements OnInit {
-    slideOpts = {
-  initialSlide: 0,
-  loop: true,
-  speed: 600,
-  autoheight: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true
-  }
-};
-
-
 
   user: any;
   vendorDeatil: any;
@@ -42,8 +31,7 @@ export class LandingPage implements OnInit {
   totalBranches = [];
   selectedBranch = 'default';
   smallScreen = false;
-  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlide;
-carouselOptions: any;
+  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlides;
 
   @HostListener("window:resize", ['$event'])
   onResize(event) {
