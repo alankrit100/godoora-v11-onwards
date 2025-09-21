@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LoginPage } from '../login/login.page';
-import { ModalController, IonSlide } from '@ionic/angular';
+import { ModalController, IonSlides } from '@ionic/angular';  
 import { AppService } from 'src/app/services/app.service';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -11,25 +11,26 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
+
 @Component({
   standalone: true,
-  imports: [IonicModule,GridGalleryComponent, RouterModule, CommonModule, SafePipe],
+  imports: [IonicModule, GridGalleryComponent, RouterModule, CommonModule, SafePipe],
   selector: 'app-landing',
   templateUrl: './landing.page.html',
   styleUrls: ['./landing.page.scss'],
 })
 export class LandingPage implements OnInit {
-    slideOpts = {
-  initialSlide: 0,
-  loop: true,
-  speed: 600,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true
-  }
-};
-
-
+  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlides; 
+  
+  slideOpts = {
+    initialSlide: 0,
+    loop: true,
+    speed: 600,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true
+    }
+  };
 
   user: any;
   vendorDeatil: any;
@@ -39,9 +40,8 @@ export class LandingPage implements OnInit {
   totalBranches = [];
   selectedBranch = 'default';
   smallScreen = false;
-  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlide;
 
-  @HostListener("window:resize", ['$event'])
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.smallScreen = this.appService.checkSmallScreen();
   }
@@ -70,17 +70,14 @@ export class LandingPage implements OnInit {
   }
 
   setVendor(branch) {
-    this.vendorDeatil = this.totalBranches.find((item) => {
-      return item.branch === branch;
-    });
+    this.vendorDeatil = this.totalBranches.find((item) => item.branch === branch);
     if (!this.vendorDeatil) {
       this.vendorDeatil = this.totalBranches[this.totalBranches.length - 1];
     }
     this.appService.setVendorDetail(this.vendorDeatil);
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   ionViewWillEnter() {
     this.getUserDetail();
@@ -88,7 +85,7 @@ export class LandingPage implements OnInit {
       e.preventDefault();
       this.appService.setPwaPromtObj(e);
     });
-    window.addEventListener('appinstalled', (event) => {
+    window.addEventListener('appinstalled', () => {
       this.utilAlertService.showSuccess('Added to homescreen');
     });
   }
@@ -101,7 +98,18 @@ export class LandingPage implements OnInit {
     }
   }
 
-  // Method called when slide is changed by drag or navigation
+  slidePrev() {
+    this.slideWithLand?.slidePrev();
+  }
+
+  slideNext() {
+    this.slideWithLand?.slideNext();
+  }
+
+  navigateExternal(url: string) {
+    window.open(url, '_blank');
+  }
+
   SlideDidChange(slideView) {
     // this.checkIfNavDisabled(object, slideView);
   }
@@ -235,7 +243,6 @@ export class LandingPage implements OnInit {
     }
   }
 
-
   navgigate(slide: any) {
     if(slide.btn) {
       if(slide.btn.routerLink) {
@@ -245,5 +252,4 @@ export class LandingPage implements OnInit {
       }
     }
   }
-
 }
