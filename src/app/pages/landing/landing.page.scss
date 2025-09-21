@@ -13,7 +13,7 @@
 .slot-confirmation-btn {
   margin: 4pt 14pt;
 }
-/*
+
 .add-to-home-container {
   display        : flex;
   justify-content: center;
@@ -23,7 +23,7 @@
     color          : #1a8cd2;
   }
 }
-*/
+
 .container {
   max-width: 100%;
   margin   : 0 auto;
@@ -103,7 +103,7 @@
       position : absolute;
       top      : 50%;
       left     : 50%;
-      -webkit-transform: translate(-50%, -50%); /* WebKit */
+      webkit-transform: translate(-50%, -50%); /* WebKit */
       -moz-transform: translate(-50%, -50%); /* Mozilla */
       -o-transform: translate(-50%, -50%); /* Opera */
       -ms-transform: translate(-50%, -50%); /* Internet Explorer */
@@ -156,7 +156,7 @@
     color        : #fff;
     left         : 50%;
     top          : 40%;
-    -webkit-transform: translate(-50%, -50%); /* WebKit */
+    webkit-transform: translate(-50%, -50%); /* WebKit */
     -moz-transform: translate(-50%, -50%); /* Mozilla */
     -o-transform: translate(-50%, -50%); /* Opera */
     -ms-transform: translate(-50%, -50%); /* Internet Explorer */
@@ -205,7 +205,7 @@
     justify-content: center;
     flex-direction: column;
     z-index: 10000000;
-    -webkit-transform: translate(-50%, -12%); /* WebKit */
+    webkit-transform: translate(-50%, -12%); /* WebKit */
     -moz-transform: translate(-50%, -12%); /* Mozilla */
     -o-transform: translate(-50%, -12%); /* Opera */
     -ms-transform: translate(-50%, -12%); /* Internet Explorer */
@@ -243,14 +243,13 @@
     height: 50%;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%); /* WebKit */
+    webkit-transform: translate(-50%, -50%); /* WebKit */
     -moz-transform: translate(-50%, -50%); /* Mozilla */
     -o-transform: translate(-50%, -50%); /* Opera */
     -ms-transform: translate(-50%, -50%); /* Internet Explorer */
     transform: translate(-50%, -50%); /* CSS3 */
     z-index: 1;
     color: white;
-    /*
     .sf-filter-option {
       h2 {
         .sf-quote-in {
@@ -261,7 +260,6 @@
         }
       }
     }
-    */
   }
 
   video, iframe {
@@ -300,197 +298,4 @@
 .small-action-btn {
   @extend .action-btn;
   width: 45% !important;
-}
-
-ion-slides.main-banner {
-  position: relative;
-
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-
-    &.left {
-      left: 10px;
-    }
-
-    &.right {
-      right: 10px;
-    }
-  }
-}
-.slider-wrapper {
-  position: relative;
-
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 999; // max priority
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    --padding-start: 8px;
-    --padding-end: 8px;
-
-    &.left {
-      left: 10px;
-    }
-
-    &.right {
-      right: 10px;
-    }
-  }
-}
-
-
-.container::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 30px;
-  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-  pointer-events: none;
-}
-
-ion-slides.main-banner,
-.slider-wrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9; // Maintain aspect ratio
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  height: 500px; // Or a defined value like 500px if 100vh is too much
-  max-height: 400px;
-  overflow: hidden;
-}
-.slider-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: flex; /* removes tiny white space caused by inline-block rendering */
-}
-
-.owl-carousel {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 !important;
-
-  .owl-stage-outer {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  .owl-stage {
-    display: flex;
-    align-items: stretch; // ensures items stretch to full height
-  }
-
-  .owl-item {
-    display: flex;
-    align-items: stretch; // again for full height
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .item {
-    height: 200px; // or whatever height you're targeting
-    overflow: hidden;
-  }
-}
-
-
-.menu-slider {
-  width: 100%;
-  height: auto;
-  max-height: 90vh;
-  overflow: hidden;
-  position: relative;
-
-  .branch-carousel {
-    width: 100%;
-    height: 100%;
-    .owl-stage-outer {
-      height: 100%;
-    }
-
-    .carousel-cell {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      max-height: 90vh;
-
-      img {
-        max-height: 90vh;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
-}
-
-.owl-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  z-index: 2;
-
-  button.owl-prev,
-  button.owl-next {
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff !important;
-    border: none;
-    font-size: 24px;
-    padding: 10px 14px;
-    border-radius: 50%;
-    transition: 0.3s ease;
-  }
-
-  button.owl-prev:hover,
-  button.owl-next:hover {
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
-
-ion-icon {
-  font-size: 24px;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.dot-bar {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 6px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 4px;
-  z-index: 5;
 }
