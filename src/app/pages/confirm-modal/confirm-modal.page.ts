@@ -3,6 +3,7 @@ import { ModalController, NavParams } from '@ionic/angular';
 import { AppService } from 'src/app/services/app.service';
 
 @Component({
+  standalone: true,
   selector: 'app-confirm-modal',
   templateUrl: './confirm-modal.page.html',
   styleUrls: ['./confirm-modal.page.scss'],
