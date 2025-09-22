@@ -15,6 +15,5 @@ import { ConfirmModalPage } from './confirm-modal.page';
     IonicModule,
     ConfirmModalPageRoutingModule
   ],
-  declarations: [ConfirmModalPage]
 })
 export class ConfirmModalPageModule {}

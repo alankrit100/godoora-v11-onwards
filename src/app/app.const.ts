@@ -19,7 +19,7 @@ import { travelDeals } from "./vendors/traveldeals";
 import { raddisonHotelsExperiences } from "./vendors/radissonhotels-experiences";
 
 export const Vendors = {
- 
+    ...localhost4200,
     ...demohotelExperiences,
     ...aatapiWonderlandExperiences,
     ...amara_ayurveda,
