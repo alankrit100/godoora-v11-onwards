@@ -6,14 +6,15 @@ import { IonicModule } from '@ionic/angular';
 
 import { ConfirmModalPageRoutingModule } from './confirm-modal-routing.module';
 
-import { ConfirmModalPage } from './confirm-modal.page';
+import { ConfirmModalPage } from './confirm-modal.page';  
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConfirmModalPageRoutingModule
+    ConfirmModalPageRoutingModule,
+    ConfirmModalPage
   ],
 })
 export class ConfirmModalPageModule {}

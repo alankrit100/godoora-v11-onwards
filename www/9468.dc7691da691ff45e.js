@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[9468],{9468:(p,c,d)=>{d.d(c,{Rl:()=>_});var o=d(4438),h=d(177);let _=(()=>{class i{static forRoot(){return{ngModule:i,providers:[]}}static{this.\u0275fac=function(t){return new(t||i)}}static{this.\u0275mod=o.$C({type:i})}static{this.\u0275inj=o.G2t({imports:[h.MD]})}}return i})()}}]);

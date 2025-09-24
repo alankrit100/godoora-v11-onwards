@@ -7,11 +7,15 @@ import { Router } from '@angular/router';
 import { SocialAuthService } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { VendorDeatil} from 'src/app/app.const';
-
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
 @Component({
+  standalone: true,
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
+  imports: [ CommonModule, IonicModule, FormsModule]
 })
 export class LoginPage implements OnInit {
 
@@ -66,8 +70,8 @@ export class LoginPage implements OnInit {
     }
   }
 
-  onGuestTypeChange(event) {
-    this.is_guest = event;
+  onGuestTypeChange(event: any) {
+    this.is_guest = event.detail.checked;
   }
 
   async confirmMobile() {
