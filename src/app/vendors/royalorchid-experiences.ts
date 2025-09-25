@@ -1,9 +1,9 @@
 export const RoyalOrchidExperiences = {
-        'www.royalorchid-experiences.goyaana.com': [
+        'royalorchid-experiences-staging.goyaana.com': [
         {
             branch: 'MysuruBrindavan',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mys.jpg',
-            id: 'www.royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/RoyalOrchid/orchid_logo.png',
             theme: 'grey-theme',
             idCategory: 12,
@@ -2314,7 +2314,7 @@ export const RoyalOrchidExperiences = {
         {
             branch: 'MysuruMetropole',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mysore.jpg',
-            id: 'royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/RoyalOrchid/orchid_logo.png',
             theme: 'grey-theme',
             idCategory: 12,
@@ -4561,7 +4561,7 @@ export const RoyalOrchidExperiences = {
         {
             branch: 'Hampi',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/hampi.jpg',
-            id: 'royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/RoyalOrchid/orchid_logo.png',
             theme: 'grey-theme',
             idCategory: 12,
@@ -6297,7 +6297,7 @@ export const RoyalOrchidExperiences = {
         {
             branch: 'default',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mysore.jpg',
-            id: 'www.royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/RoyalOrchid/orchid_logo.png',
             theme: 'grey-theme',
             idCategory: 12,

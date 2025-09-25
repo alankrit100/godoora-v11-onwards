@@ -3,13 +3,15 @@ import { ModalController } from '@ionic/angular';
 import { AppService } from 'src/app/services/app.service';
 import { Subject, takeUntil } from 'rxjs';
 import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   standalone: true,
   selector: 'app-confirm-modal',
   templateUrl: './confirm-modal.page.html',
   styleUrls: ['./confirm-modal.page.scss'],
-  imports: [IonicModule]
+  imports: [IonicModule, CommonModule]
 })
 export class ConfirmModalPage implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();

@@ -1,9 +1,9 @@
 export const kemps_corner = {
-        'www.hotel-kemps-corner.goyaana.com': [
+        'hotel-kemps-corner-staging.goyaana.com': [
         {
             branch: 'Hotel Kemps Corner',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Hotel-Kemps-Corner/Hotel-Kemps-Landing-Page.jpg',
-            id: 'www.hotel-kemps-corner.goyaana.com',
+            id: 'hotel-kemps-corner-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Hotel-Kemps-Corner/Hotel-Kemps-Corner-Logo.png',
             theme: 'grey-theme',
             idCategory: 51,

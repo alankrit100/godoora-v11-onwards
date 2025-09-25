@@ -1,9 +1,9 @@
 export const nature_resorts = {
-        'www.nature-resorts.goyaana.com': [
+        'nature-resorts-staging.goyaana.com': [
         {
             branch: 'Nature Resorts',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Nature-Resorts/Nature-Resorts-Landing-1.jpg',
-            id: 'www.nature-resorts.goyaana.com',
+            id: 'nature-resorts-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Nature-Resorts/Nature-Resorts-Logo.png',
             theme: 'nature-theme',
             idCategory: 50,

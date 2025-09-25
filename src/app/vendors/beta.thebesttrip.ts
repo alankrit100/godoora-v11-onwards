@@ -3,7 +3,7 @@ export const thebesttrip = {
         {
             branch: 'countryInnManipal',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'www.countryinnmanipal-expreiences.goyaana.com',
+            id: 'countryinnmanipal-expreiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/manipal/countryInnLogo.png',
             theme: 'fortune-theme',
             idCategory: 19,
@@ -1362,7 +1362,7 @@ export const thebesttrip = {
         {
             branch: 'CountryInnFnB',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'www.countryinnmanipal-expreiences.goyaana.com',
+            id: 'countryinnmanipal-expreiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/manipal/countryInnLogo.png',
             theme: 'fortune-theme',
             idCategory: 19,
@@ -2396,7 +2396,7 @@ export const thebesttrip = {
         {
             branch: 'palacegarden',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Benaulim/branchimage.jpg',
-            id: 'www.palacegarden-experiences.goyaana.com',
+            id: 'palacegarden-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/palacegarden/logo.jpg',
             theme: 'fortune-theme',
             idCategory: 22,
@@ -3716,7 +3716,7 @@ export const thebesttrip = {
         {
             branch: 'udupitourism',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'www.udupitourism-experiences.goyaana.com',
+            id: 'udupitourism-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/UdupiTourism/logoTourism.png',
             theme: 'fortune-theme',
             idCategory: 23,
@@ -8528,7 +8528,7 @@ export const thebesttrip = {
         {
             branch: 'mcleodganj',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mcleodganj_branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -10593,7 +10593,7 @@ export const thebesttrip = {
         {
             branch: 'mussoorie',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mussorie_branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -12397,7 +12397,7 @@ export const thebesttrip = {
         {
             branch: 'Dharamshala',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Dharmshala/branch-image.jpg',
-            id: 'www.amoharetreat-experiences.goyaana.com',
+            id: 'amoharetreat-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/amoha-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 17,
@@ -14473,7 +14473,7 @@ export const thebesttrip = {
         {
             branch: 'abbydhama',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'www.abbydhamaestatestay.goyaana.com',
+            id: 'abbydhamaestatestay-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Griham/abbydhama/logo.png',
             theme: 'grey-theme',
             idCategory: 26,
@@ -15550,7 +15550,7 @@ export const thebesttrip = {
         {
             branch: 'griham',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'www.griham-homestays.goyaana.com',
+            id: 'griham-homestays-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Griham/griham/griham_logo.jpg',
             theme: 'fortune-theme',
             idCategory: 25,

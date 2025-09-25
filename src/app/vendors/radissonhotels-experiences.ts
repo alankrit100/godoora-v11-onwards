@@ -1,9 +1,9 @@
 export const raddisonHotelsExperiences = {
-        'www.radissonhotels-experiences.goyaana.com': [
+        'radissonhotels-experiences-staging.goyaana.com': [
         {
             branch: 'Nathdwara',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/radisson/nathadwara-branch.jpg',
-            id: 'www.radissonhotels-experiences.goyaana.com',
+            id: 'radissonhotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/radisson/logo.png',
             theme: 'grey-theme',
             idCategory: 35,
@@ -2239,7 +2239,7 @@ export const raddisonHotelsExperiences = {
         {
             branch: 'default',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/radisson/radisson-home.jpg',
-            id: 'www.radissonhotels-experiences.goyaana.com',
+            id: 'radissonhotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/radisson/logo.png',
             theme: 'grey-theme',
             idCategory: 12,

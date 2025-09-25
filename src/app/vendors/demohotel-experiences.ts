@@ -1,9 +1,9 @@
 export const demohotelExperiences = {
-        'www.demohotel-experiences.goyaana.com': [
+        'localhost:4200': [
         {
             branch: 'Mumbai',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/dem.jpg',
-            id: 'www.demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -2089,7 +2089,7 @@ export const demohotelExperiences = {
         {
             branch: 'Mysore',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mys.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences.goyaana-staging.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -3894,7 +3894,7 @@ export const demohotelExperiences = {
         {
             branch: 'mcleodganj',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mcleodganj_branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 9,
@@ -6456,7 +6456,7 @@ export const demohotelExperiences = {
         {
             branch: 'Hampi',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/hampi.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -8130,7 +8130,7 @@ export const demohotelExperiences = {
         {
             branch: 'Demo mussoorie',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mussorie_branch.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'fortune-theme',
             idCategory: 9,
@@ -10653,7 +10653,7 @@ export const demohotelExperiences = {
         {
             branch: 'Bangalore',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/bang.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -13677,7 +13677,7 @@ export const demohotelExperiences = {
         {
             branch: 'kurnool',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/kurnool_branch.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -15250,7 +15250,7 @@ export const demohotelExperiences = {
         {
             branch: 'Sullivan Court',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Sullian/Sullivan.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 9,
@@ -17551,7 +17551,7 @@ export const demohotelExperiences = {
         {
             branch: 'default',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -19357,7 +19357,7 @@ export const demohotelExperiences = {
         {
             branch: 'mussoorie',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mussorie_branch.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'fortune-theme',
             idCategory: 9,
@@ -21833,7 +21833,7 @@ export const demohotelExperiences = {
         {
             branch: 'New_Hampi',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/hampi.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -23359,7 +23359,7 @@ export const demohotelExperiences = {
         {
             branch: 'Brigade Hospitality',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/Brigade/brigadec.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/Brigade/brigade_logo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -26075,7 +26075,7 @@ export const demohotelExperiences = {
         {
             branch: 'Agra',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/demo-agra/agra.jpeg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -27650,7 +27650,7 @@ export const demohotelExperiences = {
         {
             branch: 'Delhi',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/demo-agra/delhi/delhi.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -29706,7 +29706,7 @@ export const demohotelExperiences = {
         {
             branch: 'Jaipur-Rajasthan',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/demo-jaipur/branch.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -31987,7 +31987,7 @@ export const demohotelExperiences = {
         {
             branch: 'Calcutta',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/demo-kolkata/branch1.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -34150,7 +34150,7 @@ export const demohotelExperiences = {
         {
             branch: 'Aatapi Wonderland',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Aatapi/Aatapi-branch.jpg',
-            id: 'www.aatapi-wonderland-experiences.goyaana.com',
+            id: 'aatapi-wonderland-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Aatapi/Aatapi-logo.png',
             theme: 'grey-theme',
             idCategory: 42,
@@ -35326,7 +35326,7 @@ export const demohotelExperiences = {
         {
             branch: 'kolkata',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/demo-kolkata/branch1.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -37603,7 +37603,7 @@ export const demohotelExperiences = {
         {
             branch: 'Kashmir',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Demo-Kashmir/Kashmir-Landing.jpg',
-            id: 'www.demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,
@@ -38798,7 +38798,7 @@ export const demohotelExperiences = {
         {
             branch: 'Demo-Chennai',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/demo-chennai/chennai-landing1.jpg',
-            id: 'demohotel-experiences.goyaana.com',
+            id: 'demohotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/BestTripHotelsLogo.png',
             theme: 'grey-theme',
             idCategory: 9,

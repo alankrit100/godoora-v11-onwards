@@ -1,9 +1,9 @@
 export const amara_ayurveda = {
-        'www.amara-ayurveda-retreat.goyaana.com': [
+        'amara-ayurveda-retreat-staging.goyaana.com': [
         {
             branch: 'Amara Ayurveda Retreat',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Amara-Ayurveda-Retreat/Ayurveda-Amara-Landing.jpg',
-            id: 'www.amara-ayurveda-retreat.goyaana.com',
+            id: 'amara-ayurveda-retreat-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Amara-Ayurveda-Retreat/Amara-Ayurveda-Retreat-logo.png',
             theme: 'grey-theme',
             idCategory: 52,
