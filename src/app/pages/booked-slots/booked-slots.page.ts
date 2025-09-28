@@ -9,11 +9,9 @@ import { CommonModule, DatePipe } from '@angular/common';
 
 
 @Component({
-  standalone: true,
   selector: 'app-booked-slots',
   templateUrl: './booked-slots.page.html',
   styleUrls: ['./booked-slots.page.scss'],
-  imports: [IonicModule, DatePipe, CommonModule],
 })
 export class BookedSlotsPage implements OnInit {
 

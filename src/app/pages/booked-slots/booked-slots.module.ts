@@ -17,9 +17,8 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
     IonicModule,
     ComponentsModule,
     PopoverModule.forRoot(),
-    BookedSlotsPageRoutingModule,
-    BookedSlotsPage
+    BookedSlotsPageRoutingModule
   ],
-  declarations: []
+  declarations: [BookedSlotsPage]
 })
 export class BookedSlotsPageModule {}
