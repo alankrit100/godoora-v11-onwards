@@ -1,5 +1,5 @@
 export const fortunehotelsExperiences = {
-        'localhost:51690': [
+        'fortunehotels-experiences-staging.goyaana.com': [
         {
             branch: 'mcleodganj',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mcleodganj_branch.jpg',
