@@ -2,18 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/services/app.service';
 import moment from 'moment';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
-import { IonicModule, LoadingController } from '@ionic/angular';
+import { LoadingController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
-import { CommonModule, DatePipe } from '@angular/common';
-
-
-
+import { IonicModule } from '@ionic/angular';
+import { DatePipe } from '@angular/common';
 @Component({
   standalone: true,
+  imports: [IonicModule, DatePipe],
   selector: 'app-booked-slots',
   templateUrl: './booked-slots.page.html',
   styleUrls: ['./booked-slots.page.scss'],
-  imports: [IonicModule, DatePipe, CommonModule],
 })
 export class BookedSlotsPage implements OnInit {
 
