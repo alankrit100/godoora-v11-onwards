@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { BookedSlotsPage } from './booked-slots.page';
-
+import { CommonModule } from '@angular/common';
 const routes: Routes = [
   {
     path: '',
@@ -12,6 +12,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule, CommonModule],
 })
 export class BookedSlotsPageRoutingModule {}

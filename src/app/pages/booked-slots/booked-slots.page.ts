@@ -6,9 +6,10 @@ import { LoadingController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 import { IonicModule } from '@ionic/angular';
 import { DatePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 @Component({
   standalone: true,
-  imports: [IonicModule, DatePipe],
+  imports: [IonicModule, DatePipe, CommonModule],
   selector: 'app-booked-slots',
   templateUrl: './booked-slots.page.html',
   styleUrls: ['./booked-slots.page.scss'],
