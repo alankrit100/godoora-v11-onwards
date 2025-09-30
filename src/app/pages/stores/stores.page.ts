@@ -13,20 +13,62 @@ import { CarouselInModalComponent } from 'src/app/components/carousel-in-modal/c
 import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FormsModule } from "@angular/forms";
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { WebCheckinPage } from './web-checkIn-form.page';
-import { FormsModule } from '@angular/forms';
+import { OwlOptions, CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @Component({
   standalone: true,
-  imports: [IonicModule, CommonModule, CarouselModule, SafePipe, WebCheckinPage, FormsModule],
   selector: 'app-stores',
   templateUrl: './stores.page.html',
   styleUrls: ['./stores.page.scss'],
+  imports: [IonicModule, CarouselModule, CommonModule, FormsModule, SafePipe, WebCheckinPage]
 })
 export class StoresPage implements OnInit {
+
+    bannerCarouselOptions: OwlOptions = {
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoHeight: true,
+    autoWidth: true,
+    nav: true,
+    mouseDrag: false,
+    touchDrag: true,
+    pullDrag: true,
+    navSpeed: 700,
+    navText: ['<ion-icon name="chevron-back-outline"></ion-icon>', '<ion-icon name="chevron-forward-outline"></ion-icon>'],
+    center: true,
+    responsive: {
+      0: {
+        items: 1.2 // On mobile, show 1 full and a peek of the next
+      },
+      768: {
+        items: 3 // On larger screens, show 3
+      }
+    },
+  };
+
+    menuCarouselOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      }
+    },
+    nav: true
+  };
+
+
 
   storeDetail: any;
   selectedDate: any = new Date();
@@ -34,40 +76,7 @@ export class StoresPage implements OnInit {
   user: any;
   adminCreated: boolean;
   vendorDeatil: VendorDeatil;
-  serviceDetail: any = { gallery: [], menuImgs: [] };
-  menuCarouselOptions: any;
-  galleryCarouselOptions: any;
-  ngOnInit(): void {
-    this.menuCarouselOptions = {
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: false,
-      items: 1,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-      }
-    };
-
-        this.galleryCarouselOptions = {
-      loop: false,
-      nav: true,
-      dots: false,
-      margin: 10,
-      responsive: {
-        0: { items: 1 },
-        768: {
-          items: this.serviceDetail.gallery?.length > 5 ? 5 : this.serviceDetail.gallery?.length
-        }
-      }
-    };
-  }
-
+  serviceDetail: any;
   comments: string;
   showMenu = false;
   webCheckin: WebCheckInModel;
@@ -92,10 +101,11 @@ export class StoresPage implements OnInit {
     {path: 'https://source.unsplash.com/551x598/?Togo'},
     {path: 'https://source.unsplash.com/518x813/?Romania'}
   ];
-  @ViewChild('scrollMe', {static: false}) private content: any;
+  @ViewChild('scrollMe') private content: any;
   onResize(event) {
     this.smallScreen = this.appService.checkSmallScreen();
   }
+
 
   week = [];
   selectedSlots = [];
@@ -118,6 +128,9 @@ export class StoresPage implements OnInit {
     this.getFullWeek(new Date());
   }
 
+
+  ngOnInit() {
+  }
 
   onDateChange(date: any) {
     this.selectedDate = new Date(date);

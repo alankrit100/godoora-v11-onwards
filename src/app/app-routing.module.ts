@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { OffSeasonComponent } from './components/off-season/off-season.component';
+import { StoresPage } from './pages/stores/stores.page';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
     path: 'home/:id',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+ 
   {
     path: 'stores/:id',
     loadChildren: () => import('./pages/stores/stores.module').then( m => m.StoresPageModule)

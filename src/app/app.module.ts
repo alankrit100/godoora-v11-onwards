@@ -24,6 +24,8 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { CacheInterceptor } from './interceptors/cache.interceptor';
 import { SharedModule } from './shared.module';
 
+
+
 @NgModule({ declarations: [
         AppComponent,
         HeaderComponent,
