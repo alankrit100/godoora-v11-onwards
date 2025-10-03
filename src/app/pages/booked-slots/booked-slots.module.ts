@@ -9,6 +9,8 @@ import { BookedSlotsPageRoutingModule } from './booked-slots-routing.module';
 import { BookedSlotsPage } from './booked-slots.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { PopoverModule } from 'ngx-bootstrap/popover';
+import {  DatePipe } from '@angular/common';
+
 
 @NgModule({
   imports: [
@@ -18,8 +20,8 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
     ComponentsModule,
     PopoverModule.forRoot(),
     BookedSlotsPageRoutingModule,
-    BookedSlotsPage
   ],
-  declarations: []
+  declarations: [BookedSlotsPage],
+  providers: [DatePipe]
 })
 export class BookedSlotsPageModule {}
