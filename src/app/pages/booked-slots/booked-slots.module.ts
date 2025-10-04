@@ -19,9 +19,11 @@ import {  DatePipe } from '@angular/common';
     IonicModule,
     ComponentsModule,
     PopoverModule.forRoot(),
+    BookedSlotsPage,
     BookedSlotsPageRoutingModule,
   ],
-  declarations: [BookedSlotsPage],
+
+  declarations: [],
   providers: [DatePipe]
 })
 export class BookedSlotsPageModule {}

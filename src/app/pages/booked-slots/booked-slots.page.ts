@@ -5,10 +5,14 @@ import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { LoadingController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular'; 
 import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
 @Component({
+  standalone: true,
   selector: 'app-booked-slots',
   templateUrl: './booked-slots.page.html',
   styleUrls: ['./booked-slots.page.scss'],
+  imports: [CommonModule, IonicModule, FormsModule]
 })
 export class BookedSlotsPage implements OnInit {
 
