@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1759185447636,
+  "timestamp": 1759657244578,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -20,7 +20,7 @@
         "/2026.755b48ddf7246dd0.js",
         "/2069.3d9de1cbc418ccc8.js",
         "/2075.64a80fa1e2f5298e.js",
-        "/2126.62198788d4507d1f.js",
+        "/2126.3e7d31f1acb7c2cf.js",
         "/2201.c66c60af70cf851e.js",
         "/2348.c0d727e0a73a8d4b.js",
         "/2373.b3bfe285287a2ed1.js",
@@ -66,7 +66,7 @@
         "/7708.1e79e1c8c568f988.js",
         "/7926.9777530441f0bdd7.js",
         "/8066.8cc56a63d619528e.js",
-        "/8170.e678ca00fca04cf3.js",
+        "/8170.8d768789ac81eb0d.js",
         "/8191.8fe75fe5afb4abe7.js",
         "/8193.7340928114f9b09d.js",
         "/8314.1b7881691ae525eb.js",
@@ -83,13 +83,13 @@
         "/assets/icon/favicon.png",
         "/common.3a128b6b7ec7d604.js",
         "/index.html",
-        "/main.b4dabca4ec10acba.js",
+        "/main.4ffd4ac5286ca6b6.js",
         "/manifest.webmanifest",
         "/polyfills-core-js.f47eb60cc4ed4bde.js",
         "/polyfills-dom.bf542500b6fca113.js",
         "/polyfills.23143ed336501223.js",
-        "/runtime.af0a1b365dd72ccc.js",
-        "/styles.50437feea1f80d84.css"
+        "/runtime.c96e3258befa10c2.js",
+        "/styles.dd106c4774214183.css"
       ],
       "patterns": []
     },
@@ -2292,7 +2292,8 @@
         "/assets/images/whiteLotusIcon/walking.png",
         "/assets/images/whiteLotusIcon/washing-machine.png",
         "/assets/images/whiteLotusIcon/workshop.png",
-        "/assets/shapes.svg"
+        "/assets/shapes.svg",
+        "/owl.video.play.e3b436436832b027.png"
       ],
       "patterns": []
     }
@@ -2308,7 +2309,7 @@
     "/2026.755b48ddf7246dd0.js": "24c8c5c0ed471e27a32160c5b243517d6c689916",
     "/2069.3d9de1cbc418ccc8.js": "3e993019d83bf2d039fa9d58ee7a97452b984ac4",
     "/2075.64a80fa1e2f5298e.js": "58a6f6b53c456a76a912d7546b39aab92c9965aa",
-    "/2126.62198788d4507d1f.js": "523bc13b66bae7ead14c1ae4b487be29de1666af",
+    "/2126.3e7d31f1acb7c2cf.js": "a6ed0436fa5571afd49871a7b745be21491cec16",
     "/2201.c66c60af70cf851e.js": "579d28dfaa852f6d48ffdff96d205e55c3d1b4e7",
     "/2348.c0d727e0a73a8d4b.js": "598ca6a42b60890fc762245f09814ee50f20ddbb",
     "/2373.b3bfe285287a2ed1.js": "1256802e902e8e2f99b0b770f3135f2bdc68ea37",
@@ -2354,7 +2355,7 @@
     "/7708.1e79e1c8c568f988.js": "fbe9c4801b3a06aad522eb0a62345cbdf84e6176",
     "/7926.9777530441f0bdd7.js": "302adfe839f102c84eabb448c8d1025bb837dfb5",
     "/8066.8cc56a63d619528e.js": "4709a78884b3fe7fa3e13d0dca91121f5eada426",
-    "/8170.e678ca00fca04cf3.js": "32d3ee7e1671bc08037001d67dc1ace981e137fc",
+    "/8170.8d768789ac81eb0d.js": "535b457e36b8d350f32d6ca4f411ab93aacad864",
     "/8191.8fe75fe5afb4abe7.js": "e3069e63ca3227dcb1a88059e10684ff8a399c93",
     "/8193.7340928114f9b09d.js": "b0b9b01215a0fc1066d2d21f90f7cbae9a155f7e",
     "/8314.1b7881691ae525eb.js": "d47e628520d748554daeed85faf1f97dfb74e86b",
@@ -4562,14 +4563,15 @@
     "/assets/images/whiteLotusIcon/workshop.png": "612fbf76297841f2ba9b3b2647d9f4a56d41d830",
     "/assets/shapes.svg": "638f87e27e6fc7ddfd6e6b262ea70d690f6c7011",
     "/common.3a128b6b7ec7d604.js": "8d8e07d703cdb8020b7c645d7931900400458e0d",
-    "/index.html": "bea15f7fa47ccf205d1632e83a49b5e2e7b945a1",
-    "/main.b4dabca4ec10acba.js": "1dbea14c07c76b86b3ab259cfb3e0e67b7aed465",
+    "/index.html": "19e6b5b811bc9d35c28c27e9c7376654e0e27b36",
+    "/main.4ffd4ac5286ca6b6.js": "e90be8984dd88fb6551a1517a07f55ea83d7bd9a",
     "/manifest.webmanifest": "1050d1b63af8108b65cb4a0f632814f075cff94a",
+    "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills-core-js.f47eb60cc4ed4bde.js": "320bc5a48e53a1c00b5b0b52a9a6610781c6312f",
     "/polyfills-dom.bf542500b6fca113.js": "3fa333db66c8050f12e99d977f5098a6de8dd593",
     "/polyfills.23143ed336501223.js": "adc510be165ef15790479eb82401587873611ac9",
-    "/runtime.af0a1b365dd72ccc.js": "2129c9b3baf81e8e81fa9350c6b766843fcc1711",
-    "/styles.50437feea1f80d84.css": "81affd370f7dd343a7f12f558612a5ec7dd83605"
+    "/runtime.c96e3258befa10c2.js": "bbc4b37a206c3c3e41aeb808bcbf647ffa1fdd50",
+    "/styles.dd106c4774214183.css": "5bff8d0a67b276ed973497d77e21783dda6c8557"
   },
   "navigationUrls": [
     {
