@@ -1,9 +1,9 @@
 export const storiiamoharetreatExperiences = {
-        'www.storiiamoharetreat-experiences.goyaana.com': [
+        'storiiamoharetreat-experiences-staging.goyaana.com': [
         {
             branch: 'default',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Dharmshala/branch-image.jpg',
-            id: 'www.storiiamoharetreat-experiences.goyaana.com',
+            id: 'storiiamoharetreat-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/amoharetreat/amohalogo.png',
             theme: 'fortune-theme',
             idCategory: 17,

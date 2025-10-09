@@ -1,9 +1,9 @@
 export const clarksinnExperiences = {
-        'www.clarksinn-experiences.goyaana.com': [
+        'clarksinn-experiences-staging.goyaana.com': [
         {
             branch: 'default',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/kurnool_branch.jpg',
-            id: 'clarksinn-experiences.goyaana.com',
+            id: 'clarksinn-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/ClarksInn/clarksinn-logo1.jpeg',
             theme: 'grey-theme',
             idCategory: 11,
@@ -775,7 +775,7 @@ export const clarksinnExperiences = {
         {
             branch: 'Hampi',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/clarks/branch.jpg',
-            id: 'clarksinn-experiences.goyaana.com',
+            id: 'clarksinn-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/ClarksInn/clarksinn-logo1.jpeg',
             theme: 'grey-theme',
             idCategory: 11,
@@ -2694,7 +2694,7 @@ export const clarksinnExperiences = {
         {
             branch: 'Manali',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Clarks+inn+Manali/manali-branch.jpg',
-            id: 'clarksinn-experiences.goyaana.com',
+            id: 'clarksinn-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/ClarksInn/clarksinn-logo1.jpeg',
             theme: 'grey-theme',
             idCategory: 11,

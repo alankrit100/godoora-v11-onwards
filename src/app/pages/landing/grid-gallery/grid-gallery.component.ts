@@ -1,15 +1,18 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatGridListModule } from '@angular/material/grid-list';
+import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
 import { GridGalleryItemComponent } from './grid-gallery-item/grid-gallery-item.component';
 import { Image } from './image.model';
 
 @Component({
   standalone: true,
   selector: 'app-grid-gallery',
+  
   imports: [
     CommonModule,
     GridGalleryItemComponent,
+    
+    
   ],
   templateUrl: './grid-gallery.component.html'
 })

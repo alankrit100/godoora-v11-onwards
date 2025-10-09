@@ -1,10 +1,14 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { AppService } from 'src/app/services/app.service';
-import { AlertController } from '@ionic/angular';
+import { AlertController, IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 @Component({
+  standalone: true,
+  
   selector: 'app-footer',
   templateUrl: './footer.page.html',
   styleUrls: ['./footer.page.scss'],
+  imports: [ IonicModule, RouterModule]
 })
 export class FooterPage implements OnInit, AfterViewInit {
 

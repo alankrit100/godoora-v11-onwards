@@ -1,9 +1,9 @@
 export const aatapiWonderlandExperiences = {
-        'www.aatapi-wonderland-experiences.goyaana.com': [
+        'atapi-wonderland-experiences-staging.goyaana.com': [
         {
             branch: 'Aatapi Wonderland',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Aatapi/Aatapi-branch.jpg',
-            id: 'www.aatapi-wonderland-experiences.goyaana.com',
+            id: 'aatapi-wonderland-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Aatapi/Aatapi-logo.png',
             theme: 'grey-theme',
             idCategory: 42,

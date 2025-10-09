@@ -1,9 +1,9 @@
 export const fortunehotelsExperiences = {
-        'www.fortunehotels-experiences.goyaana.com': [
+        'fortunehotels-experiences-staging.goyaana.com': [
         {
             branch: 'mcleodganj',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mcleodganj_branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -1172,7 +1172,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'mussoorie',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mussorie_branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -4770,7 +4770,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Dalhousie',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneLucknow/BranchhImage.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -6341,7 +6341,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Sullivan-Court',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Sullian/Sullivan.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 9,
@@ -7879,7 +7879,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Heevan-Srinagar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Heevan+Srinagar/Heevan+RM+Srinagar.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -9703,7 +9703,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'JP-Palace-Mysore',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Mysore/fortune-mysore.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -11050,7 +11050,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Miramar-Goa',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Miramar+Goa/Fortune+Miramar+Goa.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -13573,7 +13573,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Park-Lakecity-Thane',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/thane/branch+image/branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -15580,7 +15580,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Bhubaneshwar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Park+Bhubaneshwar/Sismo.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -17339,7 +17339,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Panchwati-Kolkata',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/kolkata/kb.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -18651,7 +18651,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Inn-Haveli-Gandhinagar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/gandhinagar/gandhinagar.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -19974,7 +19974,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Ghaziabad',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/fortuneghaziabhad/branchimg/branchgrazia.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -21343,7 +21343,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'default',
             branchImg: 'https://source.unsplash.com/433x649/?Uruguay',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -24131,7 +24131,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Park-Hubballi',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Hubli/HUbli.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -25385,7 +25385,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Jalandhar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Jalandhar/jalandhar.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -26891,7 +26891,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Select-ForestHill-Kasauli',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Kasauli/Kasauli.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -28487,7 +28487,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Lucknow',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneLucknow/BranchhImage.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -30080,7 +30080,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Haridwar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Haridwar/Branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -31817,7 +31817,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Durgapur',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneDurgapur/branchImage.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -33270,7 +33270,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'JP-Celestial-Bengaluru',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneBengaluru/Banner1.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -34650,7 +34650,7 @@ export const fortunehotelsExperiences = {
         {
             branch: 'Fortune-Sector-27',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneNoida/Banner1.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -36234,7 +36234,7 @@ offSeason: {
         {
             branch: 'Ahmedabad',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Landmark-Ahmedabad/Fortune+Landmark+Ahmedabad+-+Copy+(1)+(1)+(1)_11zon.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -37587,7 +37587,7 @@ offSeason: {
         {
             branch: 'Select-Gurgaon',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneGurugaon/branchImg.jpeg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -39066,7 +39066,7 @@ offSeason: {
         {
             branch: 'Park-Dahej-SEZ',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Images/Fortune+Park+Dahej.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -41918,7 +41918,7 @@ offSeason: {
         {
             branch: 'Pandiyan-Madurai',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/fortune+madurai/facade-front.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -43364,7 +43364,7 @@ offSeason: {
         {
             branch: 'Galaxy-Vapi',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Vapi/Vapi-Branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -44701,7 +44701,7 @@ offSeason: {
         {
             branch: 'Haldwani',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Haldwani/Walkway.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -46464,7 +46464,7 @@ offSeason: {
         {
             branch: 'Select-Navi-Mumbai',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Navi+Mumbai/navi+mumbai.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -48328,7 +48328,7 @@ offSeason: {
         {
             branch: 'JPS-Grand-Rajkot',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/fortune+rajkot/banner+1.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -49588,7 +49588,7 @@ offSeason: {
         {
             branch: 'Inn-SreeKanya-Vizag',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Visakhapatnam/Visakhapatnam.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -51634,7 +51634,7 @@ offSeason: {
         {
             branch: 'Select-SG-Ahmedabad',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Ahmedabad/branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -53162,7 +53162,7 @@ offSeason: {
         {
             branch: 'Promenade-Vadodara',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Vadodara/home.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -55313,7 +55313,7 @@ offSeason: {
         {
             branch: 'Park-Katra',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/fortune-katra/img.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -56807,7 +56807,7 @@ offSeason: {
         {
             branch: 'Park-Ahmedabad',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+Park%2C+Ahmedabad/fortunrparck+ahmadabad.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -58219,7 +58219,7 @@ offSeason: {
         {
             branch: 'Grand-Ridge-Tirupati',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Tirupati/tirupati.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -60747,7 +60747,7 @@ offSeason: {
         {
             branch: 'Park-Vellore',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Vellore/vellore-branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -62499,7 +62499,7 @@ offSeason: {
         {
             branch: 'JP-Cosmos-Bengaluru',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Cosmos+Bangalore/jp-cosmos-branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -64502,7 +64502,7 @@ offSeason: {
         {
             branch: 'Kufri-Shimla',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FORTUNE+PARK+KUFRI%2C+SHIMLA/branch123.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -66376,7 +66376,7 @@ offSeason: {
         {
             branch: 'Valley-View-Manipal',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Manipal/manipal.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -68270,7 +68270,7 @@ offSeason: {
         {
             branch: 'Kalimpong',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune+park+Kalimpong/branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -70118,7 +70118,7 @@ offSeason: {
         {
             branch: 'Aligarh',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Sanaas/aligarh-branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -71717,7 +71717,7 @@ offSeason: {
         {
             branch: 'Hosur',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-hosur/hosur-branch.avif',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -73306,7 +73306,7 @@ offSeason: {
         {
             branch: 'Jim Corbett',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Jim-Corbett/fortunejimcorbettbranch.jpeg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -74604,7 +74604,7 @@ offSeason: {
         {
             branch: 'Kolkata',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-kolkata/ITC-Royal-Bengal-kolkata.png',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -75847,7 +75847,7 @@ offSeason: {
         {
             branch: 'Fortune-Park-East-Delhi',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-East-Delhi/East-delhi.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -77369,7 +77369,7 @@ offSeason: {
         {
             branch: 'Kevadia-Gujarat',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Kevadia/Banner1.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -79654,7 +79654,7 @@ offSeason: {
         {
             branch: 'CHQ',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/FortuneNoida/Banner1.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -81419,7 +81419,7 @@ offSeason: {
         {
             branch: 'Ranjit-Vihar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Ranjit-Vihar/Ranjit-Vihar-Branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -82856,7 +82856,7 @@ offSeason: {
         {
             branch: 'Fortune-Park-Hoshiarpur',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Hoshiarpur/hoshiarpur.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -84409,7 +84409,7 @@ offSeason: {
         {
             branch: 'Candolim-Goa',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Thane/ITC-Candolim.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -85963,7 +85963,7 @@ offSeason: {
         {
             branch: 'Bhaktapur',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Kathmandu/Fortune-Bhaktapur-Branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -87513,7 +87513,7 @@ offSeason: {
         {
             branch: 'Park-Palampur',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Palampur/Palampur-Branch.jpeg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -89137,7 +89137,7 @@ offSeason: {
         {
             branch: 'Chennai-ECR',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Chennai/Fortune-Chennai-Branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -90573,7 +90573,7 @@ offSeason: {
         {
             branch: 'Fortune-Khajjiar',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Khajjiar/Fortune-Khajjiar-Branch.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -92238,7 +92238,7 @@ offSeason: {
         {
             branch: 'Muralipark-Vijaywada',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Vijaywada/Branch-Image.png',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -93705,7 +93705,7 @@ offSeason: {
         {
             branch: 'Heritage-Walk',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Heritage/Heritage-Walk-branchimg.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -95174,7 +95174,7 @@ offSeason: {
         {
             branch: 'Fortune-Manesar-Gurgaon',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Park-Orange-Gurugram/Fortune-park-orange-sidhrawali-gurugram.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -96646,7 +96646,7 @@ offSeason: {
         {
             branch: 'Fortune-Beachfront',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Puri/Puri-Facade.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -97947,7 +97947,7 @@ offSeason: {
         {
             branch: 'Fortune Park Tiruppur',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Tiruppur/hotel-facade-evening-shot-Tiruppur.jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,
@@ -99229,7 +99229,7 @@ offSeason: {
         {
             branch: 'Pahalgam',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/Fortune-Park-Pahalgam/Facade+(1).jpg',
-            id: 'www.fortunehotels-experiences.goyaana.com',
+            id: 'fortunehotels-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/HotelLogos/fortune-hotel-logo.png',
             theme: 'fortune-theme',
             idCategory: 10,

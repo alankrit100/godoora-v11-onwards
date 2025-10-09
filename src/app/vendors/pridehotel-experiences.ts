@@ -1,9 +1,9 @@
 export const pridehotelExperiences = {
-    'www.pridehotel-experiences.goyaana.com': [
+    'pridehotel-experiences-staging.goyaana.com': [
         {
             branch: 'Bangalore',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride-hotel/branch-img.jpg',
-            id: 'www.royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride-hotel/pride-logo.png',
             theme: 'grey-theme',
             idCategory: 12,
@@ -1609,7 +1609,7 @@ export const pridehotelExperiences = {
         {
             branch: 'Goa',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride-hotel/goa/branch.jpg',
-            id: 'www.royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride+hotel+delhi/pride-goa.png',
             theme: 'grey-theme',
             idCategory: 12,
@@ -4201,7 +4201,7 @@ export const pridehotelExperiences = {
         {
             branch: 'Pune',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride-hotel/pune/home.jpg',
-            id: 'Pridehotel-experiences.goyaana.com',
+            id: 'Pridehotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride+hotel+delhi/pride-pune.png',
             theme: 'grey-theme',
             idCategory: 35,
@@ -6349,7 +6349,7 @@ export const pridehotelExperiences = {
         {
             branch: 'default',
             branchImg: 'https://ourtourplannerpublic.s3-ap-southeast-1.amazonaws.com/BranchImages/mysore.jpg',
-            id: 'www.royalorchid-experiences.goyaana.com',
+            id: 'royalorchid-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride-hotel/pride-logo.png',
             theme: 'grey-theme',
             idCategory: 12,
@@ -8160,7 +8160,7 @@ export const pridehotelExperiences = {
         {
             branch: 'New Delhi',
             branchImg: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride-hotel/new+delhi/home.jpg',
-            id: 'www.Pridehotel-experiences.goyaana.com',
+            id: 'Pridehotel-experiences-staging.goyaana.com',
             logo: 'https://ourtourplannerpublic.s3.ap-southeast-1.amazonaws.com/pride+hotel+delhi/pride-delhi.png',
             theme: 'grey-theme',
             idCategory: 35,
