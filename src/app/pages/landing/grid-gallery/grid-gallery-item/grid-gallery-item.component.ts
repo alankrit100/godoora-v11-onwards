@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, Input, ViewChild} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Image} from "../image.model";
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -11,26 +11,5 @@ import { CommonModule } from '@angular/common';
   imports: [RouterModule, CommonModule]
 })
 export class GridGalleryItemComponent {
-
   @Input() item: Image;
-  @Input() rowHeight: number = 1;
-  @Input() gutterSize: number = 1;
-  @ViewChild('img', {static: true}) img: ElementRef;
-
-  public rows: number = 0;
-  currentTime = new Date().getTime();
-
-  @HostListener('window:resize')
-  onWindowResize(){
-    this.calculateRows();
-  }
-
-  calculateRows() {
-    setTimeout(() => {
-      if(this.img) {
-        this.rows = Math.floor(this.img.nativeElement.offsetHeight / (this.rowHeight + this.gutterSize));
-      }
-    }, 10)
-  }
- 
 }
