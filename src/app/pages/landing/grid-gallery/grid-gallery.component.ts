@@ -10,7 +10,6 @@ import { Image } from './image.model';
   imports: [
     CommonModule,
     GridGalleryItemComponent,
-    MatGridListModule,
   ],
   templateUrl: './grid-gallery.component.html'
 })

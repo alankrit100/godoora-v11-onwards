@@ -28,7 +28,7 @@ import { SharedModule } from './shared.module';
         AppComponent,
         HeaderComponent,
         MenuPage,
-
+        FooterPage,
         ComingSoonComponent,
         OffSeasonComponent
     ],

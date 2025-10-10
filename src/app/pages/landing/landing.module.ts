@@ -8,6 +8,8 @@ import { ComponentsModule } from '../../components/components.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 // import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { RouterModule } from '@angular/router';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
 import { SharedModule } from 'src/app/shared.module';
 @NgModule({
   imports: [
@@ -20,7 +22,9 @@ import { SharedModule } from 'src/app/shared.module';
     CarouselModule.forRoot(),
     LandingPageRoutingModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    MatGridListModule,
+    GridGalleryComponent
   ],
 })
 export class LandingPageModule { }
