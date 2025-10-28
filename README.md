@@ -73,7 +73,6 @@ NOTE: The package.json file is being referred as this would cover all the major 
 
 ### Files Modified:
  - all the component files(with the .ts extension) have been converted to standalone files.
- - menu.page.html and menu.page.scss have been rewritten to match the previous login-modal component.
  - global.scss for some more enhanced styling
  - stores.page.html and .css files have been ommiteed respectfully for the addition of the owl-carousel component.
 ### 🔄 Important Update in `app.const.ts` File
